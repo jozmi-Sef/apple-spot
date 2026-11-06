@@ -1,0 +1,1926 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple Spot · iPhone originales en Piura</title>
+<meta name="description" content="iPhone 18 Pro y Pro Max originales y sellados, con un año de garantía. Envío gratis a todo el Perú o recojo en Jr. Arequipa 147, Piura.">
+<meta property="og:title" content="Apple Spot · iPhone originales en Piura">
+<meta property="og:description" content="Originales, sellados y con boleta. Envío gratis a todo el Perú por la compra de tu iPhone.">
+<meta property="og:image" content="assets/promo-iphone-18-pro.jpg">
+<meta property="og:locale" content="es_PE">
+<meta name="theme-color" content="#161513">
+<link rel="icon" type="image/png" href="assets/marca/icono-applespot.png">
+<link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161513'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23E2A12B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<style>
+:root{
+  --night:#161513;
+  --night-2:#24221F;
+  --paper:#EEECE7;
+  --surface:#E1DDD5;
+  --ink:#1C1B19;
+  --muted:#57534B;
+  --paper-muted:#C9C2B4;
+  --ocre:#E2A12B;
+  --sky:#2D4656;
+
+  --t-small:0.875rem;
+  --t-body:clamp(1.0625rem,1rem + .2vw,1.125rem);
+  --t-lead:clamp(1.25rem,1.1rem + .5vw,1.5rem);
+  --t-head:clamp(2.25rem,1.4rem + 2.6vw,3.5rem);
+  --t-display:clamp(4rem,10.6vw,12.5rem);
+
+  --margin:clamp(20px,2.4vw,32px);
+  --gap-section:clamp(96px,11vw,176px);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --visor-radius:24px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--ink);font-family:Manrope,system-ui,sans-serif;font-size:var(--t-body);line-height:1.55;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,dl,dd,figure,fieldset{margin:0;padding:0}
+ul,ol{list-style:none}
+h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+.display{font-family:Rokkitt,Georgia,serif;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;line-height:.88}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+::selection{background:var(--ocre);color:var(--ink)}
+.skip{position:fixed;left:16px;top:-80px;z-index:99;background:var(--ocre);color:var(--ink);padding:8px 12px;font-weight:700;text-decoration:none;transition:transform .3s var(--ease)}
+.skip:focus{transform:translateY(96px)}
+
+/* Botones: cuadrados, un relleno */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;font:700 1rem/1.5 Manrope,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .5s var(--ease),background-color .3s var(--ease),color .3s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.98)}
+.btn-ocre{background:var(--ocre);color:var(--ink)}
+.btn-ocre:hover{background:#EDB348}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ink:hover{background:#34322E}
+
+/* Barra de anuncio */
+.announce{background:var(--ocre);color:var(--ink);font-size:var(--t-small);font-weight:600;text-align:center;padding:8px var(--margin)}
+.announce a{font-weight:700}
+
+/* ===== Escenario dividido ===== */
+.stage{display:grid;grid-template-columns:47% 53%;position:relative}
+.visor{position:sticky;top:0;height:100svh;padding:20px 0 20px var(--margin);z-index:1}
+.visor-frame{position:relative;height:100%;border-radius:var(--visor-radius);overflow:hidden;background:var(--night-2)}
+.visor-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .9s var(--ease),transform 6s var(--ease)}
+.visor-frame img.on{opacity:1;transform:scale(1)}
+.visor-ui{position:absolute;left:16px;right:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#fff;font-size:var(--t-small);font-weight:600}
+.visor-ui.top{top:16px}
+.visor-ui.bottom{bottom:16px;flex-direction:column;align-items:center}
+.chip{background:rgba(12,11,10,.62);padding:4px 12px;border-radius:999px;font-variant-numeric:tabular-nums}
+.chip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#7BC47F;margin-right:8px;vertical-align:1px}
+.chip.closed .dot{background:#D9534F}
+.zoom{display:flex;gap:4px;background:rgba(12,11,10,.62);padding:4px;border-radius:999px}
+.zoom span{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;transition:background-color .5s var(--ease),color .5s var(--ease)}
+.zoom span.on{background:rgba(255,255,255,.18);color:var(--ocre)}
+.caption{text-align:center}
+
+.col{position:relative;z-index:2;min-width:0}
+.col > section{padding:var(--gap-section) clamp(24px,4.6vw,72px)}
+.measure{max-width:46ch}
+
+/* Hero */
+.hero{background:var(--night);color:var(--paper);min-height:100svh;position:relative;padding:0 !important}
+.nav{display:flex;justify-content:flex-end;align-items:center;gap:28px;padding:var(--margin);font-size:1rem;font-weight:600}
+.nav a:not(.btn){text-decoration:none;color:var(--paper);transition:color .3s var(--ease)}
+.nav a:not(.btn):hover{color:var(--ocre)}
+.nav .menu-btn{display:none}
+.nav .logo{margin-right:auto;flex:none;line-height:0}
+.nav .logo img{height:56px;width:auto}
+.nav .btn{white-space:nowrap}
+@media (min-width:821px) and (max-width:1700px){.nav{gap:18px}.nav .bag-btn .t{display:none}}
+.hero-copy{position:absolute;top:40%;left:clamp(24px,4.6vw,72px);right:var(--margin);max-width:min(26ch,46%)}
+/* El iPhone de portada: se gira para ver la pantalla */
+.hero-phone{position:absolute;right:clamp(24px,4.6vw,72px);top:13%;width:clamp(180px,30%,280px);aspect-ratio:780/1630;perspective:1600px;background:none;border:0;padding:0;cursor:pointer;z-index:1;color:#fff}
+.hero-phone .flip{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateY(calc(var(--turn,0deg) + var(--tilt,0deg)));transition:transform 1s var(--ease)}
+.hero-phone[aria-pressed="true"]{--turn:180deg}
+.face{position:absolute;inset:0;backface-visibility:hidden}
+.face img{width:100%;height:100%}
+.face.f{transform:rotateY(180deg)}
+.face .scr{position:absolute;left:5.6%;top:2.7%;width:88.8%;height:94.6%;object-fit:cover;border-radius:10.8% / 5.2%}
+.face .island{position:absolute;inset:0}
+.hero-phone .chip{position:absolute;left:50%;bottom:6%;transform:translateX(-50%);white-space:nowrap;font-size:var(--t-small);font-weight:600;display:flex;align-items:center;gap:8px;transition:background-color .3s var(--ease)}
+.hero-phone:hover .chip{background:rgba(12,11,10,.82)}
+.hero-copy p{font-size:var(--t-lead);line-height:1.35}
+.hero-copy .proof{font-size:var(--t-small);color:var(--paper-muted);margin-top:16px;line-height:1.5}
+.hero-copy .btn{margin-top:32px}
+.wordmark{position:absolute;right:var(--margin);bottom:40px;font-size:var(--t-display);white-space:nowrap;color:var(--paper);transform-origin:right bottom;will-change:transform}
+.wordmark .sun{display:inline-block;width:.66em;height:.66em;border-radius:50%;background:var(--ocre);vertical-align:-.0em;margin:0 .02em}
+
+/* Vitrina */
+.showcase{background:var(--paper)}
+.showcase h2,.list-sec h2,.ship h2{font-size:var(--t-head)}
+.plate{margin-top:40px;aspect-ratio:1;max-width:440px;background:var(--surface);position:relative;display:flex;align-items:flex-end;justify-content:center;padding-bottom:7%}
+.plate img{height:84%;width:auto;transition:opacity .4s var(--ease),transform .6s var(--ease)}
+.plate img.pro{height:77%}
+.plate img.swap{opacity:0;transform:translateY(8px)}
+.plate figcaption{position:absolute;left:16px;top:12px;font-size:var(--t-small);font-weight:600;color:var(--muted)}
+.pick{margin-top:24px;border:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pick legend{font-weight:700;font-size:1rem;margin-bottom:8px;width:100%}
+.pick legend span{font-weight:600;color:var(--muted)}
+.dots label{position:relative;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.dots input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.dots i{width:32px;height:32px;border-radius:50%;display:block;outline:2px solid transparent;outline-offset:4px;transition:outline-color .3s var(--ease),transform .5s var(--ease)}
+.dots label:hover i{transform:scale(1.08)}
+.dots input:checked + i{outline-color:var(--ink)}
+.dots input:focus-visible + i{outline-color:var(--ocre)}
+.c-naranja{background:#D8742E}.c-azul{background:#33405E}.c-plata{background:#D2D4D7}
+.tabs{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:32px}
+.tabs button{background:none;border:0;padding:8px 0;font:600 1.125rem/1.4 Manrope,sans-serif;color:var(--muted);cursor:pointer;transition:color .3s var(--ease)}
+.tabs button[aria-selected="true"]{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--ocre);text-decoration-thickness:3px;text-underline-offset:8px}
+.tabs button:hover{color:var(--ink)}
+.model h3{font-size:var(--t-head);margin-top:40px}
+.model .price{font-size:var(--t-lead);font-weight:700;margin-top:16px;font-variant-numeric:tabular-nums}
+.model .desc{margin-top:16px}
+.gift{margin-top:24px;background:var(--surface);padding:16px 20px;display:flex;align-items:center;gap:16px}
+.gift b{display:block}
+.gift .things{display:flex;align-items:flex-end;gap:8px;flex:none}
+.gift .things img{width:auto;height:56px}
+.gift .things img+img{height:48px}
+.cells{display:grid;grid-template-columns:1fr 1fr;margin-top:40px}
+.cells a{height:72px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;text-align:center;padding:0 12px;transition:background-color .3s var(--ease),transform .5s var(--ease)}
+.cells a:active{transform:scale(.98)}
+.cells .c1{background:var(--ink);color:var(--paper)}
+.cells .c1:hover{background:#34322E}
+.cells .c2{background:var(--surface);color:var(--ink)}
+.cells .c2:hover{background:#DCD2C0}
+
+/* Catálogo */
+.list-sec{background:var(--surface)}
+.showcase .intro{margin-top:12px}
+.list-sec .intro{margin-top:16px;max-width:46ch}
+.group{margin-top:40px}
+.group > p{color:var(--muted);font-size:1rem;margin-bottom:8px}
+.row a{display:flex;align-items:baseline;gap:12px;min-height:40px;padding:6px 0;text-decoration:none;font-size:1rem;transition:transform .5s var(--ease)}
+.row a:hover{transform:translateX(6px)}
+.row a:hover .name{text-decoration:underline;text-underline-offset:3px}
+.row .sw{flex:none;width:16px;height:16px;border-radius:50%;align-self:center}
+.sw.s{background:var(--ocre)}
+.sw.u{background:var(--sky)}
+.sw.a{background:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:16px;font-size:var(--t-small);color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend .sw{width:12px;height:12px;border-radius:50%}
+.row .val{margin-left:auto;color:var(--muted);font-size:var(--t-small);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Envíos: el ticket */
+.ship{background:var(--sky);color:var(--paper)}
+.ship .intro{margin-top:16px;max-width:40ch}
+.slip{margin-top:48px;background:var(--paper);color:var(--ink);max-width:480px;padding:32px 28px 56px;font-variant-numeric:tabular-nums;font-size:1rem}
+.slip fieldset{border:0;margin-bottom:24px}
+.slip legend{font-weight:700;margin-bottom:8px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.seg span{display:block;padding:8px 12px;background:var(--surface);font-weight:600;font-size:1rem;transition:background-color .3s var(--ease),color .3s var(--ease)}
+.seg input:checked + span{background:var(--ink);color:var(--paper)}
+.seg input:focus-visible + span{outline:3px solid var(--ocre);outline-offset:2px}
+.seg label:hover span{background:#DCD2C0}
+.seg input:checked:hover + span{background:var(--ink)}
+.slip select{font:600 1rem Manrope,sans-serif;padding:10px 12px;background:var(--surface);border:0;color:var(--ink);width:100%}
+.it{margin-top:28px}
+.it h3{font-size:1rem;font-weight:700;margin-bottom:8px}
+.it li{display:flex;align-items:baseline;gap:8px;padding:4px 0}
+.it li .what{flex:1 1 auto}
+.it li .lead{flex:1 1 16px;overflow:hidden;white-space:nowrap;color:var(--muted);min-width:16px;max-width:50%}
+.it li .lead::before{content:". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."}
+.it li .when{flex:none;font-weight:600}
+.total{margin:28px -28px 0;background:var(--ink);color:var(--paper);min-height:44px;padding:10px 28px;display:flex;justify-content:space-between;gap:12px;font-weight:700;flex-wrap:wrap}
+.slip-note{margin-top:16px;font-size:var(--t-small);color:var(--muted)}
+
+/* Compáralos: los cuatro a su tamaño real */
+.compare{background:var(--paper);padding:var(--gap-section) var(--margin);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.compare .head{grid-column:1 / span 12;display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.compare h2{font-size:var(--t-head)}
+.compare .head p{max-width:44ch}
+.compare .four{grid-column:1 / span 12;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
+.cmp .shelf{background:var(--surface);height:clamp(300px,30vw,440px);display:flex;align-items:flex-end;justify-content:center;padding-bottom:28px}
+.cmp .shelf img{height:82%;width:auto}
+.cmp .shelf img.pro{height:75.5%}
+.cmp h3{font-size:1.5rem;font-weight:700;margin-top:20px;line-height:1.2}
+.cmp dl{margin-top:12px;font-size:1rem}
+.cmp dl div{display:flex;justify-content:space-between;gap:12px;padding:8px 0}
+.cmp dt{color:var(--muted)}
+.cmp dd{font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.cmp .sw3{display:flex;gap:6px;justify-content:flex-end}
+.cmp .sw3 i{width:16px;height:16px;border-radius:50%}
+.cmp .for{margin-top:12px;font-size:1rem;min-height:3em}
+.cmp .btn{margin-top:20px;width:100%;justify-content:center}
+.compare .all{grid-column:1 / span 12;margin-top:24px;background:var(--ink);color:var(--paper);padding:20px 24px;font-weight:600;display:flex;flex-wrap:wrap;gap:8px 32px}
+.compare .all span::before{content:"";display:inline-block;width:8px;height:8px;background:var(--ocre);margin-right:12px;vertical-align:2px}
+
+/* Frase revelada */
+.tagline{background:var(--ocre);color:var(--ink);padding:var(--gap-section) var(--margin);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.tagline{align-items:center}
+.tagline p{grid-column:1 / span 6;font-size:2.25rem;line-height:1.2;font-weight:700;letter-spacing:-.01em;max-width:24ch}
+.tagline .w{opacity:.3;transition:opacity .6s var(--ease)}
+.tagline .w.lit{opacity:1}
+.tagline figure{grid-column:7 / span 6}
+.tagline figure img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.tagline figcaption{font-size:var(--t-small);margin-top:8px}
+
+/* Ventajas: titular fijo */
+.feat{background:var(--night);color:var(--paper);padding:var(--gap-section) var(--margin);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.feat h2{grid-column:1 / span 5;position:sticky;top:32px;align-self:start;font-size:clamp(3.5rem,6.6vw,6.5rem)}
+.feat .blocks{grid-column:7 / span 6;display:grid;gap:120px}
+.blk h3{font-family:Rokkitt,serif;font-weight:800;font-size:var(--t-head);line-height:.95;text-transform:uppercase}
+.blk .pair{display:flex;gap:32px;margin-top:24px;align-items:flex-start}
+.blk:nth-child(even) .pair{flex-direction:row-reverse}
+.blk img{width:clamp(200px,17vw,280px);aspect-ratio:3/4;object-fit:cover;flex:none}
+.blk ul{display:grid;gap:14px;font-size:1.125rem;line-height:1.4}
+.blk li::before{content:"";display:inline-block;width:8px;height:8px;background:var(--ocre);margin-right:12px;vertical-align:2px}
+
+/* Videos de clientes */
+.unbox{background:var(--paper);padding:var(--gap-section) var(--margin);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.unbox .head{grid-column:1 / span 4}
+.unbox h2,.ways h2,.faq h2{font-size:var(--t-head)}
+.unbox .head p{margin-top:16px}
+.unbox .clips{grid-column:5 / span 8;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.clip{aspect-ratio:9/16;background:var(--surface);display:flex;flex-direction:column;justify-content:flex-end;padding:20px;color:var(--muted);font-size:var(--t-small)}
+.clip i{font-size:2.5rem;color:var(--ink);margin-bottom:auto}
+.clip strong{color:var(--ink);font-size:1rem}
+
+/* Cómo compras: nombres en columnas */
+.ways{background:var(--paper);padding:24px var(--margin) var(--gap-section);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.ways h2{grid-column:1 / span 3}
+.ways .names{grid-column:5 / span 8;columns:4;column-gap:32px;line-height:1.5}
+.ways .names li.k{color:var(--muted);break-before:column}
+.ways .names li.k:first-child{break-before:auto}
+
+/* Preguntas */
+.faq{background:var(--surface);padding:var(--gap-section) var(--margin);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.faq h2{grid-column:1 / span 3}
+.faq .qa{grid-column:5 / span 8;columns:2;column-gap:56px;line-height:1.55}
+.faq .qa p{break-inside:avoid;margin-bottom:20px}
+.faq .qa b{font-weight:700}
+
+/* Contacto */
+.contact{background:var(--night);color:var(--paper);padding:160px var(--margin) 120px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.contact .say{grid-column:1 / span 5;font-size:2.25rem;line-height:1.15;font-weight:700;letter-spacing:-.01em}
+.contact .map{grid-column:7 / span 3;aspect-ratio:1;overflow:hidden}
+.contact .map img{width:132%;max-width:none;margin-left:-6%}
+.contact .links{grid-column:10 / span 3}
+.contact h2{font-size:1.125rem;font-weight:700}
+.contact .links a{display:block;margin-top:12px;font-size:1.125rem;text-underline-offset:4px;transition:color .3s var(--ease)}
+.contact .links a:first-of-type{margin-top:20px}
+.contact .links a:hover{color:var(--ocre)}
+.contact .hours{margin-top:20px;font-size:var(--t-small);color:var(--paper-muted)}
+.open-now{margin-top:12px;font-weight:600;font-size:1rem}
+
+/* Pie: nombre sobre la última foto */
+.foot{position:relative;min-height:100svh;color:var(--paper);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.foot > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55)}
+.foot .top{position:relative;display:flex;justify-content:space-between;gap:32px;padding:32px var(--margin);font-size:1rem}
+.foot .top ul{display:grid;gap:6px}
+.foot .top a{text-underline-offset:4px}
+.foot .top a:hover{color:var(--ocre)}
+.foot .bottom{position:relative;padding:0 var(--margin) 32px}
+.foot .big{font-size:calc((100vw - 2 * var(--margin)) / 6.1);white-space:nowrap;line-height:.8;transform-origin:left bottom;will-change:transform}
+.foot .legal{font-size:var(--t-small);margin-top:24px;max-width:75ch;color:#E8E2D6}
+.foot .legal a{color:#fff}
+
+/* WhatsApp flotante */
+.wa{position:fixed;right:20px;bottom:20px;z-index:50;width:60px;height:60px;border-radius:50%;background:#1F9D55;color:#fff;display:grid;place-items:center;font-size:2rem;box-shadow:0 8px 24px rgba(0,0,0,.28); /* taste-skill-ignore: botón flotante */text-decoration:none;transition:transform .5s var(--ease)}
+.wa:hover{transform:scale(1.06)}
+.wa:active{transform:scale(.96)}
+
+/* Menú móvil */
+.panel{position:fixed;inset:0;z-index:80;background:rgba(22,21,19,.97);color:var(--paper);display:flex;flex-direction:column;padding:24px 20px;opacity:0;transition:opacity .4s var(--ease)}
+.panel[hidden]{display:none}
+.panel.open{opacity:1}
+.panel .close{align-self:flex-end;background:none;border:0;color:var(--paper);font:700 1rem Manrope,sans-serif;padding:12px;cursor:pointer}
+.panel nav{margin-top:40px;display:grid;gap:8px}
+.panel nav a{font-family:Rokkitt,serif;font-weight:800;text-transform:uppercase;font-size:3.5rem;line-height:1.1;text-decoration:none}
+
+[hidden]{display:none !important}
+/* Pantallas sueltas para Figma (?estado=...): solo el panel, a altura completa */
+.estado body{background:#4A4742}
+.estado body > :not(dialog){display:none !important}
+.estado dialog.sheet[open]{position:relative;inset:auto;margin:0 0 0 auto;height:auto;min-height:100vh;max-height:none;overflow:visible;transform:none;transition:none}
+@media (min-width:821px){.estado .pd-gal{height:100vh}}
+.estado .pd-cta{position:static;padding:0;margin-top:32px}
+/* Modo Figma: estado quieto que html.to.design pueda leer */
+.figma .skip,.figma .hero-phone .face.f,.figma .visor-ui.bottom{display:none}
+@media (min-width:821px){.figma .visor{position:relative;height:auto}}
+.figma .visor-frame img{transform:none;transition:none}
+.pd-box b{display:block}
+.pd-box .things{display:flex;gap:8px;align-items:flex-end;flex:none}
+
+/* Etiqueta de novedad y precio rebajado */
+.new{display:inline-block;margin-left:8px;padding:0 6px;background:var(--ocre);color:var(--ink);font:700 var(--t-small)/1.5 Manrope,sans-serif;text-transform:none;letter-spacing:0;vertical-align:middle}
+.row .val s,.cmp dd s{color:var(--muted);font-weight:500;margin-right:6px}
+
+/* Categorías destacadas */
+.cats{background:var(--night);color:var(--paper)}
+.cats h2{font-size:var(--t-head)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
+.tile{position:relative;background:var(--night-2);min-height:260px;padding:20px;display:flex;flex-direction:column;gap:8px;text-decoration:none;overflow:hidden;transition:background-color .3s var(--ease)}
+.tile:hover{background:#2F2C28}
+.tile b{font-size:1.5rem;line-height:1.2;position:relative;z-index:1}
+.tile span{font-size:1rem;color:var(--paper-muted);max-width:17ch;position:relative;z-index:1}
+.tile img{position:absolute;right:16px;bottom:-34%;height:88%;width:auto;transition:transform .5s var(--ease)}
+.tile img.acc{bottom:12px;height:46%}
+.tile:hover img{transform:translateY(-10px)}
+
+/* Ofertas de lanzamiento */
+.offers{background:var(--night);color:var(--paper);padding:var(--gap-section) var(--margin);display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.offers .head{grid-column:1 / span 12;display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.offers h2{font-size:var(--t-head)}
+.offers .head p{max-width:44ch;color:var(--paper-muted)}
+.deals-w{grid-column:1 / span 8;display:grid;gap:12px}
+.deals{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.deal{position:relative;background:var(--night-2);padding:20px;display:flex;flex-direction:column;text-decoration:none;transition:background-color .3s var(--ease)}
+.deal:hover{background:#2F2C28}
+.deal .pic{height:220px;display:flex;align-items:flex-end;justify-content:center}
+.deal .pic img{height:100%;width:auto;transition:transform .5s var(--ease)}
+.deal:hover .pic img{transform:translateY(-8px)}
+.deal b{margin-top:20px;font-size:1.125rem}
+.deal .was{color:var(--paper-muted);text-decoration:line-through;margin-top:4px}
+.deal .now{font-size:var(--t-lead);font-weight:700;font-variant-numeric:tabular-nums}
+.off{position:absolute;top:16px;left:16px;background:var(--ocre);color:var(--ink);font-weight:700;font-size:var(--t-small);padding:2px 8px}
+.packs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pack{background:var(--paper);color:var(--ink);padding:16px 20px;display:grid;grid-template-columns:72px 1fr auto;gap:16px;align-items:center;text-decoration:none;transition:background-color .3s var(--ease)}
+.pack:hover{background:#FFFFFF}
+.pack img{height:72px;width:auto;margin:auto}
+.pack b{display:block}
+.pack .pr{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pack .pr s{display:block;font-weight:500;color:var(--muted)}
+.offers .side{grid-column:9 / span 4;display:grid;gap:12px}
+.launch{background:var(--paper);color:var(--ink);padding:24px}
+.launch .things{display:flex;gap:8px;align-items:flex-end}
+.launch .things img{height:64px;width:auto}
+.launch .things img+img{height:54px}
+.launch h3,.signup h3{font-size:1.5rem;line-height:1.2;margin-top:16px}
+.launch ul{margin-top:12px;display:grid;gap:6px}
+.launch li::before{content:"";display:inline-block;width:8px;height:8px;background:var(--ocre);margin-right:12px;vertical-align:2px}
+.signup{background:var(--ocre);color:var(--ink);padding:24px}
+.signup h3{margin-top:0}
+.signup p{margin-top:8px}
+.signup .fld input{background:var(--paper)}
+.signup .btn{margin-top:16px;width:100%;justify-content:center;min-height:56px}
+.signup .ok{margin-top:16px;background:var(--ink);color:var(--paper);padding:16px;font-weight:600}
+.signup .ok b{color:var(--ocre);font-size:1.125rem;letter-spacing:.04em}
+
+/* Galería de redes */
+.social{background:var(--paper);padding:24px var(--margin) var(--gap-section);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.social .head{grid-column:1 / span 4}
+.social h2{font-size:var(--t-head);overflow-wrap:anywhere}
+.social .head p{margin-top:16px}
+.nets{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.feed{grid-column:5 / span 8;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.feed a{aspect-ratio:1;background:var(--surface);display:flex;flex-direction:column;justify-content:space-between;padding:16px;text-decoration:none;color:var(--muted);font-size:var(--t-small);font-weight:600;transition:background-color .3s var(--ease)}
+.feed a:hover{background:#D6D0C4}
+.feed i{font-size:2rem;color:var(--ink)}
+
+/* Ficha: stock, SKU, video, pack, cuidados y reseñas */
+.pd-price s{color:var(--muted);font-weight:500;font-size:1.125rem;margin-left:12px}
+.pd-price .pct{margin-left:12px;background:var(--ocre);color:var(--ink);font-size:var(--t-small);padding:2px 8px;vertical-align:middle}
+.pd-stock{margin-top:12px;font-weight:600;font-size:1rem;display:flex;align-items:center;gap:8px}
+.pd-stock::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:#2E7D4F}
+.pd-stock.low::before{background:var(--ocre)}
+.pd-stock.order::before{background:var(--sky)}
+.pd-sku{margin-top:4px;font-size:var(--t-small);color:var(--muted);font-variant-numeric:tabular-nums}
+.seg span em{font-style:normal;font-weight:600;color:var(--sky);margin-left:4px;font-size:var(--t-small)}
+.pd-views{display:flex;gap:4px;margin-bottom:auto;align-self:flex-start}
+.pd-views button{background:var(--paper);border:0;padding:8px 12px;font:600 1rem/1.5 Manrope,sans-serif;color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background-color .3s var(--ease),color .3s var(--ease)}
+.pd-views button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.pd-video{height:76%;aspect-ratio:9/16;max-width:100%;background:var(--night-2);color:var(--paper);display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:20px;font-size:var(--t-small);color:var(--paper-muted)}
+.pd-video i{font-size:3rem;color:var(--ocre);margin-bottom:auto}
+.pd-video b{color:var(--paper);font-size:1rem}
+.wa-btn{width:100%;justify-content:center;margin-top:8px;min-height:56px}
+.pd-pack{margin-top:24px;outline:2px solid var(--surface);outline-offset:-2px;padding:16px 20px;display:grid;grid-template-columns:56px 1fr auto;gap:16px;align-items:center}
+.pd-pack img{height:56px;width:auto;margin:auto}
+.pd-pack b{display:block}
+.pd-pack small{display:block;color:var(--muted);font-size:var(--t-small)}
+.pd-pack s{color:var(--muted)}
+.pd-pack button{background:var(--ink);color:var(--paper);border:0;padding:8px 12px;font:700 1rem/1.5 Manrope,sans-serif;cursor:pointer;transition:background-color .3s var(--ease)}
+.pd-pack button:hover{background:#34322E}
+details.more{margin-top:24px;background:var(--surface)}
+details.more summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:"+";font-size:1.5rem;line-height:1;transition:transform .3s var(--ease)}
+details.more[open] summary::after{transform:rotate(45deg)}
+details.more ul{padding:0 20px 20px;display:grid;gap:10px}
+details.more li::before{content:"";display:inline-block;width:8px;height:8px;background:var(--ocre);margin-right:12px;vertical-align:2px}
+.pd-rev{margin-top:32px}
+.pd-rev h3{font-size:1.5rem}
+.stars{display:flex;gap:2px;margin-top:8px;color:var(--ocre);font-size:1.5rem}
+.pd-rev p{margin-top:8px}
+.pd-rev a{display:inline-block;margin-top:8px;font-weight:600;text-underline-offset:4px}
+
+/* Cuenta e invitado */
+.guest{margin-top:16px;background:var(--surface);padding:12px 16px;font-size:1rem}
+.guest button,.linkbtn{background:none;border:0;padding:0;font:inherit;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.acctw{padding:24px 28px 40px}
+.acctw h2{font-size:var(--t-head)}
+.acctw > p{margin-top:16px}
+.acctw .btn{width:100%;justify-content:center;margin-top:20px;min-height:56px}
+.acctw ul{margin-top:20px;display:grid;gap:8px}
+.acctw li::before{content:"";display:inline-block;width:8px;height:8px;background:var(--ocre);margin-right:12px;vertical-align:2px}
+#s-unlock a{font-weight:700;text-underline-offset:3px}
+
+/* Bolsa en la barra */
+.bag-btn{position:relative;display:inline-flex;align-items:center;gap:8px;background:none;border:0;color:var(--paper);font:600 1rem/1.5 Manrope,sans-serif;cursor:pointer;padding:8px 4px;transition:color .3s var(--ease)}
+.bag-btn:hover{color:var(--ocre)}
+.bag-btn i{font-size:1.5rem}
+.bag-btn .n{min-width:24px;height:24px;border-radius:999px;background:var(--ocre);color:var(--ink);font-size:var(--t-small);font-weight:700;display:grid;place-items:center;padding:0 6px}
+.bag-btn .n[data-zero]{background:var(--night-2);color:var(--paper)}
+
+/* Ficha de producto y bolsa: paneles desde la derecha */
+html.lock{overflow:hidden}
+dialog.sheet{position:fixed;inset:0 0 0 auto;margin:0;width:min(1080px,100vw);max-width:none;height:100dvh;max-height:none;border:0;padding:0;background:var(--paper);color:var(--ink);overflow:auto;overscroll-behavior:contain}
+dialog.sheet.narrow{width:min(520px,100vw)}
+dialog.sheet::backdrop{background:rgba(22,21,19,.62)}
+.x{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:0;font:700 1rem/1.5 Manrope,sans-serif;color:var(--ink);padding:8px 12px;cursor:pointer;transition:background-color .3s var(--ease)}
+.x:hover{background:#D6D0C4}
+.pd{display:grid;grid-template-columns:1fr 1fr;min-height:100%}
+.pd-gal{position:sticky;top:0;height:100dvh;background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:40px 24px 48px}
+.pd-gal img{height:calc(76% * var(--sz,1));width:auto;max-width:100%;object-fit:contain;transition:opacity .35s var(--ease),transform .5s var(--ease)}
+.pd-gal img.acc{height:auto;width:72%;max-height:70%}
+.pd-gal img.swap{opacity:0;transform:translateY(10px)}
+.pd-scr{margin-top:20px;font-size:var(--t-small);font-weight:600;color:var(--muted)}
+.pd-info{padding:24px 40px 64px}
+.pd-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.pd-crumb{font-size:var(--t-small);font-weight:600;color:var(--muted)}
+.badge{margin-top:32px;font-size:var(--t-small);font-weight:700;display:flex;align-items:center;gap:8px}
+.badge::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--ocre)}
+.badge.u::before{background:var(--sky)}
+.badge.a::before{background:var(--ink)}
+.pd-info h2{font-size:var(--t-head);margin-top:12px}
+.pd-price{font-size:var(--t-lead);font-weight:700;margin-top:16px;font-variant-numeric:tabular-nums}
+.pd-desc{margin-top:12px;max-width:44ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips button{background:var(--surface);border:0;padding:8px 12px;font:600 1rem/1.5 Manrope,sans-serif;color:var(--ink);cursor:pointer;transition:background-color .3s var(--ease),color .3s var(--ease)}
+.chips button:hover{background:#D6D0C4}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.pd-block{margin-top:28px}
+.pd-block > b,.pd-opts legend{display:block;font-weight:700;font-size:1rem;margin-bottom:8px}
+.pd-opts .pick{margin-top:28px}
+.seg small{font-weight:600;color:var(--muted);margin-left:4px}
+.seg input:checked + span small{color:var(--paper-muted)}
+.sel{font:600 1rem Manrope,sans-serif;padding:10px 12px;background:var(--surface);border:0;color:var(--ink);width:100%}
+.qty{display:inline-flex;align-items:center;background:var(--surface)}
+.qty button{width:44px;height:44px;border:0;background:none;font:700 1.125rem Manrope,sans-serif;cursor:pointer;color:var(--ink)}
+.qty button:hover{background:#D6D0C4}
+.qty output{min-width:32px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.pd-cta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:32px}
+.pd-cta .btn{justify-content:center;min-height:56px}
+.pd-added{margin-top:12px;font-weight:600;min-height:1.5em}
+.pd-added button{background:none;border:0;padding:0;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;color:inherit}
+.pd-box{margin-top:24px;background:var(--surface);padding:16px 20px;display:flex;gap:16px;align-items:center}
+.pd-box img{height:56px;width:auto}
+.pd-box img+img{height:48px}
+.facts{margin-top:32px}
+.facts div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:12px 0}
+.facts div+div{border-top:1px solid var(--surface)}
+.facts dt{font-weight:700}
+.pd-help{margin-top:24px;font-size:1rem}
+.pd-help a{text-underline-offset:4px}
+
+/* Bolsa y pago */
+.bagw{padding:24px 28px 40px;display:flex;flex-direction:column;min-height:100%}
+.bagw h2{font-size:var(--t-head)}
+.items{margin-top:24px}
+.item{display:grid;grid-template-columns:72px 1fr auto;gap:16px;padding:16px 0;align-items:start}
+.item+.item{border-top:1px solid var(--surface)}
+.item .th{height:88px;background:var(--surface);display:grid;place-items:center;padding:8px}
+.item .th img{max-height:72px;width:auto}
+.item b{display:block}
+.item .o{font-size:var(--t-small);color:var(--muted)}
+.item .pr{font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.item .row3{display:flex;align-items:center;gap:16px;margin-top:8px}
+.item .qty button{width:36px;height:36px}
+.item .rm{background:none;border:0;padding:0;font:600 var(--t-small) Manrope,sans-serif;color:var(--muted);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.sum{margin-top:auto;padding-top:24px}
+.sum div{display:flex;justify-content:space-between;padding:6px 0;font-variant-numeric:tabular-nums}
+.sum .tot{font-weight:700;font-size:var(--t-lead);padding-top:12px}
+.sum .btn{width:100%;justify-content:center;margin-top:16px;min-height:56px}
+.empty{margin-top:40px;background:var(--surface);padding:32px 24px}
+.empty p{margin-bottom:20px}
+.steps{display:flex;gap:8px;margin-top:20px}
+.steps li{flex:1;padding-top:8px;border-top:4px solid var(--surface);font-size:var(--t-small);font-weight:600;color:var(--muted)}
+.steps li.on{border-color:var(--ocre);color:var(--ink)}
+.ck fieldset{border:0;margin-top:24px}
+.ck legend{font-weight:700;font-size:var(--t-lead);margin-bottom:8px}
+.fld{margin-top:16px}
+.fld label{display:block;font-weight:700;font-size:1rem;margin-bottom:6px}
+.fld input,.fld select{width:100%;font:500 1rem Manrope,sans-serif;padding:12px;background:var(--surface);border:0;color:var(--ink)}
+.fld input[aria-invalid="true"],.fld select[aria-invalid="true"]{outline:2px solid #B3261E;outline-offset:0}
+.fld .err{color:#9C1F17;font-size:var(--t-small);font-weight:600;margin-top:4px;min-height:0}
+.fld .hint{color:var(--muted);font-size:var(--t-small);margin-top:4px}
+.payopt{display:grid;gap:8px;margin-top:8px}
+.payopt label{display:flex;gap:12px;align-items:flex-start;background:var(--surface);padding:16px;cursor:pointer}
+.payopt input{margin-top:4px;accent-color:var(--ink);width:18px;height:18px}
+.payopt small{display:block;color:var(--muted);font-size:var(--t-small)}
+.terms{display:flex;gap:12px;align-items:flex-start;margin-top:20px;font-size:1rem}
+.terms input{width:18px;height:18px;margin-top:4px;accent-color:var(--ink)}
+.ck-nav{display:grid;grid-template-columns:auto 1fr;gap:8px;margin-top:32px}
+.ck-nav .btn{justify-content:center;min-height:56px}
+.btn-soft{background:var(--surface);color:var(--ink)}
+.btn-soft:hover{background:#D6D0C4}
+#done > p:first-child{margin-top:24px;color:var(--muted)}
+.done .code{font-size:var(--t-lead);font-weight:700;margin-top:8px}
+.done ul{margin-top:20px}
+.done li{display:flex;justify-content:space-between;gap:16px;padding:6px 0;font-variant-numeric:tabular-nums}
+.done .btn{width:100%;justify-content:center;margin-top:12px;min-height:56px}
+.done .note{margin-top:20px;font-size:1rem}
+
+@media (max-width:820px){
+  .pd{display:block}
+  .pd-gal{position:relative;height:48svh;padding:24px 16px 20px}
+  .pd-gal .pd-scr{margin-top:12px}
+  .pd-info{padding:20px 20px 120px}
+  .pd-top{position:absolute;top:12px;left:12px;right:12px}
+  .pd-top .pd-crumb{background:var(--paper);padding:4px 10px}
+  .badge{margin-top:0}
+  .pd-cta{position:fixed;left:0;right:0;bottom:0;margin:0;padding:12px;background:var(--paper);z-index:2}
+  .facts div{grid-template-columns:1fr;gap:2px}
+  .bagw{padding:20px 20px 32px}
+  .bag-btn .t{display:none}
+  .tiles{gap:8px}
+  .tile{min-height:200px;padding:16px}
+  .tile b{font-size:1.125rem}
+  .tile span{font-size:var(--t-small);max-width:none}
+  .tile img{height:62%;bottom:-24%}
+  .offers,.social{display:block;padding-left:20px;padding-right:20px}
+  .deals-w{margin-top:32px}
+  .deals{grid-template-columns:1fr}
+  .deal{display:grid;grid-template-columns:88px 1fr;column-gap:16px;padding:16px}
+  .deal .pic{grid-row:1 / span 3;height:120px}
+  .deal b{margin-top:0}
+  .off{top:auto;bottom:16px;left:auto;right:16px}
+  .packs{grid-template-columns:1fr}
+  .offers .side{margin-top:12px}
+  .feed{margin-top:32px;grid-template-columns:repeat(2,1fr);gap:8px}
+  .pd-views{margin-top:40px}
+  .pd-video{height:82%}
+  .pd-pack{grid-template-columns:48px 1fr}
+  .pd-pack button{grid-column:1 / span 2}
+  .acctw{padding:20px 20px 32px}
+}
+
+@media (prefers-reduced-motion:no-preference){
+  dialog.sheet{transition:transform .5s var(--ease),overlay .5s allow-discrete,display .5s allow-discrete;transform:translateX(100%)}
+  dialog.sheet[open]{transform:none}
+  @starting-style{dialog.sheet[open]{transform:translateX(100%)}}
+  dialog.sheet::backdrop{transition:opacity .5s var(--ease),overlay .5s allow-discrete,display .5s allow-discrete;opacity:0}
+  dialog.sheet[open]::backdrop{opacity:1}
+  @starting-style{dialog.sheet[open]::backdrop{opacity:0}}
+  .panel nav a{opacity:0;transform:translateY(24px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+  .panel.open nav a{opacity:1;transform:none}
+  /* Entradas */
+  .js-motion .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .js-motion .rv.in{opacity:1;transform:none}
+}
+
+@media (max-width:1100px){
+  .feat h2{grid-column:1 / span 12;position:static}
+  .feat .blocks{grid-column:1 / span 12}
+  .ways .names{columns:2}
+  .ways .names li.k{break-before:auto;margin-top:24px}
+  .ways .names li.k:first-child{margin-top:0}
+  .faq .qa{grid-column:1 / span 12}
+  .faq h2,.ways h2,.ways .names,.unbox .head,.unbox .clips{grid-column:1 / span 12}
+  .compare .four{grid-template-columns:repeat(2,1fr);row-gap:56px}
+  .contact .say{grid-column:1 / span 12}
+  .contact .map{grid-column:1 / span 4}
+  .contact .links{grid-column:5 / span 8}
+}
+@media (max-width:820px){
+  .stage{display:block}
+  .visor{position:relative;height:58svh;padding:12px 12px 0}
+  .visor-frame{border-radius:20px}
+  .col,.hero{position:static}
+  .nav{position:absolute;top:0;left:0;right:0;z-index:3;padding:24px 28px;justify-content:space-between}
+  .nav a.l{display:none}
+  .nav .btn{white-space:nowrap;padding:8px 12px}
+  .nav{gap:16px}
+  .nav .menu-btn{margin-right:0}
+  .nav .logo img{height:44px}
+  .nav > .btn{display:none}
+  .figma .wordmark{margin-top:16px}
+  .nav .menu-btn{display:inline-flex;background:rgba(12,11,10,.62);color:#fff;border:0;font:700 1rem Manrope,sans-serif;padding:8px 14px;border-radius:999px;cursor:pointer}
+  .visor-ui.top{top:72px}
+  .hero{min-height:0;display:flex;flex-direction:column}
+  .wordmark{order:-1;position:relative;z-index:2;right:auto;bottom:auto;display:block;font-size:calc((100vw - 40px) / 6.1);margin:-4vw 20px 0;transform-origin:left top}
+  .visor-ui.bottom{display:none}
+  .hero-copy{position:static;max-width:none;padding:24px 20px 72px}
+  .hero-phone{display:none}
+  .compare .four{gap:40px 16px;margin-top:32px}
+  .cmp .shelf{height:240px;padding-bottom:16px}
+  .cmp h3{font-size:1.125rem}
+  .cmp dl div{flex-direction:column;gap:0;padding:6px 0}
+  .cmp dd,.cmp .sw3{text-align:left;justify-content:flex-start}
+  .cmp .for{display:none}
+  .cmp .btn{padding:12px}
+  .compare .all{flex-direction:column;padding:20px}
+  .gift .things img{height:44px}
+  .gift .things img+img{height:38px}
+  .hero-copy p{font-size:1.25rem}
+  .col > section{padding:88px 20px}
+  .slip{padding:28px 20px 56px}
+  .total{margin:28px -20px 0;padding:10px 20px}
+  .tagline,.feat,.unbox,.ways,.faq,.contact,.compare{display:block;padding-left:20px;padding-right:20px}
+  .tagline p{font-size:1.5rem;max-width:calc(100% - 64px)}
+  .tagline figure{margin-top:40px}
+  .feat .blocks{gap:112px;margin-top:48px}
+  .feat h2{position:static;font-size:7.4vw}
+  .blk .pair,.blk:nth-child(even) .pair{flex-direction:column}
+  .blk img{width:100%;aspect-ratio:4/3}
+  .blk ul{font-size:1.0625rem}
+  .unbox .clips{margin-top:32px;gap:8px}
+  .clip{padding:12px}
+  .clip i{font-size:2rem}
+  .clip .spec{display:none}
+  .ways .names{margin-top:32px;columns:2;column-gap:20px;font-size:1.0625rem}
+  .faq .qa{margin-top:32px;columns:1}
+  .contact{padding-top:96px;padding-bottom:96px}
+  .contact .say{font-size:1.5rem}
+  .contact .row2{display:flex;gap:16px;margin-top:32px}
+  .contact .map{width:96px;flex:none}
+  .contact .links a:first-of-type{margin-top:12px}
+  .foot{min-height:0;gap:72px}
+  .foot .top{flex-direction:column;gap:24px}
+  .foot .big{font-size:calc((100vw - 40px) / 6.1)}
+}
+@media (min-width:821px){.contact .row2{display:contents}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .js-motion .rv{transform:none}
+  .visor-frame img{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<p class="announce">10% en tu primera compra de accesorios · <a href="#envios">Envío gratis a todo el Perú</a> por la compra de tu iPhone</p>
+
+<div class="stage">
+  <aside class="visor" aria-label="Anuncios de Apple Spot">
+    <div class="visor-frame">
+      <img class="on" data-shot="0" src="assets/promo-iphone-18-pro.jpg" width="1920" height="2880" alt="iPhone 18 Pro, ya está en Piura. Desde S/ 5,799 con envío gratis">
+      <img data-shot="1" src="assets/promo-pro-max.jpg" width="1920" height="1298" alt="iPhone 18 Pro Max, la pantalla más grande. Desde S/ 6,499" loading="lazy">
+      <img data-shot="2" src="assets/promo-linea.jpg" width="1920" height="1280" alt="Toda la línea iPhone, del 12 al 18 Pro Max" loading="lazy">
+      <img data-shot="3" src="assets/promo-envio.jpg" width="1920" height="1440" alt="Envío gratis a todo el Perú con tu iPhone" loading="lazy">
+      <div class="visor-ui top">
+        <span class="chip" id="clock">Piura</span>
+        <span class="chip" id="openchip"><span class="dot"></span><span>Tienda abierta</span></span>
+      </div>
+      <div class="visor-ui bottom">
+        <div class="zoom" aria-hidden="true"><span data-z="0">0,5</span><span data-z="1" class="on">1×</span><span data-z="2">2×</span><span data-z="3">5×</span></div>
+        <span class="chip caption" id="capt">iPhone 18 Pro, ya en Piura</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="col" id="main">
+    <section class="hero" data-shot="0" data-zoom="1" data-cap="iPhone 18 Pro, ya en Piura" aria-labelledby="h1">
+      <nav class="nav" aria-label="Principal">
+        <a class="logo" href="index.html" aria-label="Apple Spot, inicio"><img src="assets/marca/logo-applespot-claro.png" width="900" height="746" alt="Apple Spot"></a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="panel">Menú</button>
+        <a class="l" href="#vitrina">iPhone</a>
+        <a class="l" href="coleccion.html">Colección</a>
+        <a class="l" href="nosotros.html">Nosotros</a>
+        <a class="l" href="contacto.html">Contacto</a>
+        <button class="bag-btn" type="button" id="acct-open" aria-label="Tu cuenta"><i class="ph ph-user" aria-hidden="true"></i><span class="t">Cuenta</span></button>
+        <button class="bag-btn" type="button" id="bag-open" aria-label="Abrir tu bolsa, 0 productos"><i class="ph ph-handbag" aria-hidden="true"></i><span class="t">Bolsa</span><span class="n" id="bag-n" data-zero>0</span></button>
+        <a class="btn btn-ocre" href="#vitrina">Compra ahora</a>
+      </nav>
+      <button class="hero-phone" type="button" aria-pressed="false" aria-label="Girar el iPhone 18 Pro Max para ver la pantalla">
+        <span class="flip">
+          <span class="face b"><img src="assets/iphone/iphone-pro-max-naranja.png" width="780" height="1630" alt="iPhone 18 Pro Max naranja, vista de las tres cámaras"></span>
+          <span class="face f"><img class="scr" src="assets/fondo-pantalla.jpg" width="1170" height="2532" alt="" loading="lazy"><img class="island" src="assets/iphone/iphone-pro-max-naranja-frente.png" width="780" height="1630" alt="" loading="lazy"></span>
+        </span>
+        <span class="chip"><i class="ph ph-arrows-clockwise" aria-hidden="true"></i><span id="flip-t">Gíralo</span></span>
+      </button>
+      <div class="hero-copy rv">
+        <p>El iPhone 18 Pro ya está en Piura. Original, sellado y con un año de garantía.</p>
+        <a class="btn btn-ocre" href="#p-18p" data-open="18p">Compra ahora <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <p class="proof">Envío gratis a todo el Perú. Tienda en Jr. Arequipa 147, Piura.</p>
+      </div>
+      <h1 class="wordmark display" id="h1" aria-label="Apple Spot, iPhone originales en Piura">Apple sp<span class="sun" aria-hidden="true"></span>t</h1>
+    </section>
+
+    <section class="cats" id="categorias" aria-labelledby="h-cats">
+      <h2 class="display" id="h-cats">Categorías</h2>
+      <div class="tiles">
+        <a class="tile rv" href="#catalogo"><b>Nuevos y sellados</b><span>Del iPhone 17 al 18 Pro Max, con 1 año de garantía</span><img src="assets/iphone/iphone-pro-max-azul.png" width="780" height="1630" alt="" loading="lazy"></a>
+        <a class="tile rv" href="#seminuevos"><b>Seminuevos</b><span>Del iPhone 12 al 16 Pro Max, revisados y con 6 meses de garantía</span><img src="assets/iphone/iphone-cuadrado-natural.png" width="780" height="1630" alt="" loading="lazy"></a>
+        <a class="tile rv" href="#accesorios"><b>Accesorios</b><span>Cubos, cables y cases, originales o certificados</span><img class="acc" src="assets/iphone/cubo-20w.png" width="600" height="760" alt="" loading="lazy"></a>
+        <a class="tile rv" href="#ofertas"><b>Ofertas</b><span>Precios rebajados y packs de lanzamiento</span><img src="assets/iphone/iphone-pro-naranja.png" width="720" height="1500" alt="" loading="lazy"></a>
+      </div>
+    </section>
+
+    <section class="showcase" id="vitrina" data-shot="1" data-zoom="0" data-cap="iPhone 18 Pro Max en naranja" aria-labelledby="h-vit">
+      <h2 class="display" id="h-vit">Más vendidos</h2>
+      <p class="intro rv">Nuevos y sellados de fábrica, con 1 año de garantía.</p>
+      <div class="tabs rv" role="tablist" aria-label="Modelos destacados">
+        <button role="tab" aria-selected="true" data-m="0">18 Pro Max<span class="new">Nuevo</span></button>
+        <button role="tab" aria-selected="false" data-m="1">18 Pro<span class="new">Nuevo</span></button>
+        <button role="tab" aria-selected="false" data-m="2">17 Pro Max</button>
+        <button role="tab" aria-selected="false" data-m="3">17 Pro</button>
+      </div>
+      <div class="model" role="tabpanel" aria-live="polite">
+        <figure class="plate rv"><img id="m-img" src="assets/iphone/iphone-pro-max-naranja.png" width="780" height="1630" alt="iPhone 18 Pro Max en naranja"><figcaption id="m-photo">6,9 pulgadas</figcaption></figure>
+        <h3 class="display rv" id="m-name">iPhone 18 Pro Max</h3>
+        <p class="price rv" id="m-price">S/ 6,499</p>
+        <p class="desc measure rv" id="m-desc">La pantalla más grande y la batería de mayor duración de la línea. Sellado de fábrica, con boleta y un año de garantía.</p>
+        <form class="rv" id="cfg" onsubmit="return false">
+          <fieldset class="pick dots">
+            <legend>Color: <span id="c-name">Naranja</span></legend>
+            <label title="Naranja"><input type="radio" name="col" value="naranja" checked aria-label="Naranja"><i class="c-naranja"></i></label>
+            <label title="Azul profundo"><input type="radio" name="col" value="azul" aria-label="Azul profundo"><i class="c-azul"></i></label>
+            <label title="Plata"><input type="radio" name="col" value="plata" aria-label="Plata"><i class="c-plata"></i></label>
+          </fieldset>
+          <fieldset class="pick seg">
+            <legend>Capacidad</legend>
+            <label><input type="radio" name="cap" value="0" checked><span>256 GB</span></label>
+            <label><input type="radio" name="cap" value="700"><span>512 GB</span></label>
+            <label><input type="radio" name="cap" value="1500"><span>1 TB</span></label>
+          </fieldset>
+        </form>
+        <div class="gift rv">
+          <span class="things"><img src="assets/iphone/cubo-20w.png" width="600" height="760" alt="Cubo de carga de 20 W"><img src="assets/iphone/airpods.png" width="760" height="640" alt="Estuche de AirPods"></span>
+          <p><b>Va dentro de tu caja</b>Un cubo de 20 W original y unos AirPods, solo durante el primer mes.</p>
+        </div>
+        <div class="cells rv">
+          <a class="c1" id="m-add" href="#bolsa"><i class="ph ph-handbag" aria-hidden="true"></i>Agregar a la bolsa</a>
+          <a class="c2" id="m-more" href="#p-18pm">Ver ficha completa</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="list-sec" id="catalogo" data-shot="2" data-zoom="2" data-cap="Toda la línea iPhone" aria-labelledby="h-cat">
+      <h2 class="display" id="h-cat">Todo el catálogo</h2>
+      <p class="intro rv">Del iPhone 12 al 18 Pro Max, y los accesorios para cargarlos. Toca un modelo para ver sus colores, capacidades y precio, y cómpralo aquí mismo.</p>
+      <p class="legend rv"><span><span class="sw s"></span>Sellado, 1 año de garantía</span><span><span class="sw u"></span>Seminuevo, 6 meses</span></p>
+      <div class="group rv">
+        <p>Línea 18</p>
+        <ul>
+          <li class="row"><a href="#p-18pm" data-open="18pm"><span class="sw s"></span><span class="name">iPhone 18 Pro Max<span class="new">Nuevo</span></span><span class="val">Desde S/ 6,499</span></a></li>
+          <li class="row"><a href="#p-18p" data-open="18p"><span class="sw s"></span><span class="name">iPhone 18 Pro<span class="new">Nuevo</span></span><span class="val">Desde S/ 5,799</span></a></li>
+        </ul>
+      </div>
+      <div class="group rv">
+        <p>Línea 17</p>
+        <ul>
+          <li class="row"><a href="#p-17pm" data-open="17pm"><span class="sw s"></span><span class="name">iPhone 17 Pro Max</span><span class="val"><s>S/ 5,699</s>S/ 5,299</span></a></li>
+          <li class="row"><a href="#p-17p" data-open="17p"><span class="sw s"></span><span class="name">iPhone 17 Pro</span><span class="val"><s>S/ 4,999</s>S/ 4,699</span></a></li>
+          <li class="row"><a href="#p-air" data-open="air"><span class="sw s"></span><span class="name">iPhone Air</span><span class="val">Desde S/ 4,299</span></a></li>
+          <li class="row"><a href="#p-17" data-open="17"><span class="sw s"></span><span class="name">iPhone 17</span><span class="val">Desde S/ 3,799</span></a></li>
+        </ul>
+      </div>
+      <div class="group rv" id="seminuevos">
+        <p>Seminuevos, del 12 al 16</p>
+        <ul>
+          <li class="row"><a href="#p-16pm" data-open="16pm"><span class="sw u"></span><span class="name">iPhone 16 Pro Max</span><span class="val"><s>S/ 4,199</s>S/ 3,899</span></a></li>
+          <li class="row"><a href="#p-16p" data-open="16p"><span class="sw u"></span><span class="name">iPhone 16 Pro</span><span class="val">Desde S/ 3,399</span></a></li>
+          <li class="row"><a href="#p-16" data-open="16"><span class="sw u"></span><span class="name">iPhone 16</span><span class="val">Desde S/ 2,599</span></a></li>
+          <li class="row"><a href="#p-15pm" data-open="15pm"><span class="sw u"></span><span class="name">iPhone 15 Pro Max</span><span class="val">Desde S/ 2,999</span></a></li>
+          <li class="row"><a href="#p-15" data-open="15"><span class="sw u"></span><span class="name">iPhone 15</span><span class="val">Desde S/ 1,999</span></a></li>
+          <li class="row"><a href="#p-14pm" data-open="14pm"><span class="sw u"></span><span class="name">iPhone 14 Pro Max</span><span class="val">Desde S/ 2,399</span></a></li>
+          <li class="row"><a href="#p-13" data-open="13"><span class="sw u"></span><span class="name">iPhone 13</span><span class="val">Desde S/ 1,499</span></a></li>
+          <li class="row"><a href="#p-12" data-open="12"><span class="sw u"></span><span class="name">iPhone 12</span><span class="val">Desde S/ 1,099</span></a></li>
+        </ul>
+      </div>
+      <div class="group rv" id="accesorios">
+        <p>Accesorios, 10% en tu primera compra</p>
+        <ul>
+          <li class="row"><a href="#p-cubo" data-open="cubo" data-opt="tipo:Original Apple"><span class="sw a"></span><span class="name">Cubo de 20 W original</span><span class="val">S/ 99</span></a></li>
+          <li class="row"><a href="#p-cable" data-open="cable" data-opt="tipo:Original Apple"><span class="sw a"></span><span class="name">Cable USB C original</span><span class="val">S/ 79</span></a></li>
+          <li class="row"><a href="#p-cubo" data-open="cubo" data-opt="tipo:Certificado"><span class="sw a"></span><span class="name">Cubo de carga certificado</span><span class="val">S/ 49</span></a></li>
+          <li class="row"><a href="#p-cable" data-open="cable" data-opt="tipo:Certificado"><span class="sw a"></span><span class="name">Cable de carga certificado</span><span class="val">S/ 35</span></a></li>
+          <li class="row"><a href="#p-case" data-open="case"><span class="sw a"></span><span class="name">Case para cada modelo</span><span class="val">S/ 59</span></a></li>
+          <li class="row"><a href="#p-pack-prot" data-open="pack-prot"><span class="sw a"></span><span class="name">Pack protección</span><span class="val"><s>S/ 94</s>S/ 79</span></a></li>
+          <li class="row"><a href="#p-pack-carga" data-open="pack-carga"><span class="sw a"></span><span class="name">Pack carga rápida</span><span class="val"><s>S/ 178</s>S/ 159</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ship" id="envios" data-shot="3" data-zoom="3" data-cap="Envío gratis a todo el Perú" aria-labelledby="h-env">
+      <h2 class="display" id="h-env">Así te llega</h2>
+      <p class="intro rv">Envío gratis a todo el Perú con cualquier iPhone. Selecciona la ciudad y la modalidad de entrega para ver la fecha estimada de llegada. No realizamos envíos internacionales.</p>
+      <form class="slip rv" id="slip" aria-label="Calcula tu entrega" onsubmit="return false">
+        <fieldset>
+          <legend>¿A qué ciudad va?</legend>
+          <label class="sr" for="city">Ciudad</label>
+          <select id="city">
+            <option>Piura</option><option>Sullana</option><option>Castilla</option><option>Lima</option><option>Callao</option><option>Chiclayo</option><option>Trujillo</option><option>Arequipa</option><option>Otra ciudad del Perú</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>¿Cómo lo recibes?</legend>
+          <div class="seg">
+            <label><input type="radio" name="mode" value="casa" checked><span>A domicilio</span></label>
+            <label><input type="radio" name="mode" value="agencia"><span>En agencia</span></label>
+            <label><input type="radio" name="mode" value="tienda"><span>Recojo en tienda</span></label>
+          </div>
+        </fieldset>
+        <div class="it">
+          <h3>Hoy</h3>
+          <ul>
+            <li><span class="what">Eliges tu iPhone y pagas</span><span class="lead"></span><span class="when">5 min</span></li>
+            <li><span class="what">Tu boleta llega por WhatsApp</span><span class="lead"></span><span class="when">Hoy</span></li>
+          </ul>
+        </div>
+        <div class="it" id="it-mid">
+          <h3 id="d-ship">Mañana</h3>
+          <ul><li><span class="what" id="t-ship">Lo empacamos y despachamos desde Piura</span><span class="lead"></span><span class="when" id="w-ship">—</span></li></ul>
+        </div>
+        <div class="it">
+          <h3>Llegada</h3>
+          <ul><li><span class="what" id="t-arr">Llega a tu casa en Piura</span><span class="lead"></span><span class="when" id="w-arr">—</span></li></ul>
+        </div>
+        <p class="total"><span id="tot-a">Envío S/ 0</span><span id="tot-b">3 a 5 días</span></p>
+        <p class="slip-note">Modelos a pedido: de 6 a 7 días. Te avisamos antes de que pagues.</p>
+      </form>
+    </section>
+  </main>
+</div>
+
+<section class="compare" id="comparar" aria-labelledby="h-cmp">
+  <div class="head rv">
+    <h2 class="display" id="h-cmp">Compáralos</h2>
+    <p>Los cuatro a su tamaño real, uno al lado del otro. Elige por pantalla y por precio; el resto ya viene incluido.</p>
+  </div>
+  <div class="four">
+    <article class="cmp rv">
+      <div class="shelf"><img src="assets/iphone/iphone-pro-max-naranja.png" width="780" height="1630" alt="iPhone 18 Pro Max naranja" loading="lazy"></div>
+      <h3>iPhone 18 Pro Max<span class="new">Nuevo</span></h3>
+      <dl>
+        <div><dt>Desde</dt><dd>S/ 6,499</dd></div>
+        <div><dt>Pantalla</dt><dd>6,9 pulgadas</dd></div>
+        <div><dt>Colores</dt><dd class="sw3"><i class="c-naranja"></i><i class="c-azul"></i><i class="c-plata"></i></dd></div>
+      </dl>
+      <p class="for">La pantalla más grande y la mayor autonomía de batería de la línea 18.</p>
+      <a class="btn btn-ink" href="#p-18pm" data-open="18pm">Ver colores y comprar</a>
+    </article>
+    <article class="cmp rv">
+      <div class="shelf"><img class="pro" src="assets/iphone/iphone-pro-azul.png" width="720" height="1500" alt="iPhone 18 Pro azul profundo" loading="lazy"></div>
+      <h3>iPhone 18 Pro<span class="new">Nuevo</span></h3>
+      <dl>
+        <div><dt>Desde</dt><dd>S/ 5,799</dd></div>
+        <div><dt>Pantalla</dt><dd>6,3 pulgadas</dd></div>
+        <div><dt>Colores</dt><dd class="sw3"><i class="c-naranja"></i><i class="c-azul"></i><i class="c-plata"></i></dd></div>
+      </dl>
+      <p class="for">El sistema de cámaras del Pro Max en formato de 6,3 pulgadas.</p>
+      <a class="btn btn-ink" href="#p-18p" data-open="18p">Ver colores y comprar</a>
+    </article>
+    <article class="cmp rv">
+      <div class="shelf"><img src="assets/iphone/iphone-pro-max-plata.png" width="780" height="1630" alt="iPhone 17 Pro Max plata" loading="lazy"></div>
+      <h3>iPhone 17 Pro Max</h3>
+      <dl>
+        <div><dt>Desde</dt><dd><s>S/ 5,699</s>S/ 5,299</dd></div>
+        <div><dt>Pantalla</dt><dd>6,9 pulgadas</dd></div>
+        <div><dt>Colores</dt><dd class="sw3"><i class="c-naranja"></i><i class="c-azul"></i><i class="c-plata"></i></dd></div>
+      </dl>
+      <p class="for">Pantalla de 6,9 pulgadas a S/ 1,200 menos que el 18 Pro Max.</p>
+      <a class="btn btn-ink" href="#p-17pm" data-open="17pm">Ver colores y comprar</a>
+    </article>
+    <article class="cmp rv">
+      <div class="shelf"><img class="pro" src="assets/iphone/iphone-pro-naranja.png" width="720" height="1500" alt="iPhone 17 Pro naranja" loading="lazy"></div>
+      <h3>iPhone 17 Pro</h3>
+      <dl>
+        <div><dt>Desde</dt><dd><s>S/ 4,999</s>S/ 4,699</dd></div>
+        <div><dt>Pantalla</dt><dd>6,3 pulgadas</dd></div>
+        <div><dt>Colores</dt><dd class="sw3"><i class="c-naranja"></i><i class="c-azul"></i><i class="c-plata"></i></dd></div>
+      </dl>
+      <p class="for">El acceso a la línea Pro, con AirPods incluidos durante el lanzamiento.</p>
+      <a class="btn btn-ink" href="#p-17p" data-open="17p">Ver colores y comprar</a>
+    </article>
+  </div>
+  <p class="all rv"><span>Los cuatro, sellados de fábrica</span><span>1 año de garantía</span><span>Cubo de 20 W y AirPods de regalo</span><span>Envío gratis a todo el Perú</span></p>
+</section>
+
+<section class="offers" id="ofertas" aria-labelledby="h-off">
+  <div class="head rv">
+    <h2 class="display" id="h-off">Ofertas de lanzamiento</h2>
+    <p>Precios rebajados, packs y regalos durante el primer mes de la tienda online.</p>
+  </div>
+  <div class="deals-w">
+    <div class="deals">
+      <a class="deal rv" href="#p-17pm" data-open="17pm"><span class="off">−7%</span><span class="pic"><img src="assets/iphone/iphone-pro-max-azul.png" width="780" height="1630" alt="iPhone 17 Pro Max azul profundo" loading="lazy"></span><b>iPhone 17 Pro Max</b><span class="was">S/ 5,699</span><span class="now">S/ 5,299</span></a>
+      <a class="deal rv" href="#p-17p" data-open="17p"><span class="off">−6%</span><span class="pic"><img src="assets/iphone/iphone-pro-plata.png" width="720" height="1500" alt="iPhone 17 Pro plata" loading="lazy"></span><b>iPhone 17 Pro</b><span class="was">S/ 4,999</span><span class="now">S/ 4,699</span></a>
+      <a class="deal rv" href="#p-16pm" data-open="16pm"><span class="off">−7%</span><span class="pic"><img src="assets/iphone/iphone-cuadrado-grafito.png" width="780" height="1630" alt="iPhone 16 Pro Max grafito" loading="lazy"></span><b>iPhone 16 Pro Max seminuevo</b><span class="was">S/ 4,199</span><span class="now">S/ 3,899</span></a>
+    </div>
+    <div class="packs">
+      <a class="pack rv" href="#p-pack-prot" data-open="pack-prot"><img src="assets/iphone/case.png" width="780" height="1630" alt="" loading="lazy"><span><b>Pack protección</b>Case con MagSafe y cable USB C certificado</span><span class="pr"><s>S/ 94</s>S/ 79</span></a>
+      <a class="pack rv" href="#p-pack-carga" data-open="pack-carga"><img src="assets/iphone/cubo-20w.png" width="600" height="760" alt="" loading="lazy"><span><b>Pack carga rápida</b>Cubo de 20 W y cable USB C originales Apple</span><span class="pr"><s>S/ 178</s>S/ 159</span></a>
+    </div>
+  </div>
+  <aside class="side" aria-label="Promociones">
+    <div class="launch rv">
+      <span class="things"><img src="assets/iphone/cubo-20w.png" width="600" height="760" alt="Cubo de 20 W"><img src="assets/iphone/airpods.png" width="760" height="640" alt="AirPods"></span>
+      <h3>Regalo con tu iPhone</h3>
+      <ul><li>Cubo de 20 W original con cualquier iPhone</li><li>AirPods del 17 Pro al 18 Pro Max</li><li>Solo durante el primer mes</li></ul>
+    </div>
+    <form class="signup rv" id="descuento" novalidate>
+      <h3>10% en tu primera compra de accesorios</h3>
+      <p>Déjanos tu correo o WhatsApp y el descuento se aplica solo en tu bolsa.</p>
+      <div class="fld"><label for="u-contact">Correo o WhatsApp</label><input id="u-contact" name="contact" autocomplete="email"><p class="err" id="e-u"></p></div>
+      <button class="btn btn-ink" type="submit">Activar mi 10%</button>
+      <p class="ok" id="u-ok" role="status" hidden></p>
+    </form>
+  </aside>
+</section>
+
+<section class="tagline" aria-label="Lo que prometemos">
+  <p id="tag">Equipos originales, sellados de fábrica y con boleta electrónica. Garantía escrita de un año, atendida en Piura.</p>
+  <figure class="rv">
+    <img src="assets/promo-originales.jpg" width="1920" height="1080" alt="Originales, sellados y con boleta. Un año de garantía atendida en Piura" loading="lazy">
+    <figcaption>La línea completa de Apple Spot</figcaption>
+  </figure>
+</section>
+
+<section class="feat" id="garantia" aria-labelledby="h-feat">
+  <h2 class="display" id="h-feat">Por qué nosotros</h2>
+  <div class="blocks">
+    <article class="blk">
+      <h3>Garantía 100% real</h3>
+      <div class="pair">
+        <img src="assets/promo-pro-max.jpg" width="1920" height="1298" alt="iPhone 18 Pro Max en naranja" loading="lazy">
+        <ul><li>Equipos sellados: un año</li><li>Seminuevos y de exhibición: seis meses</li><li>La atendemos en nuestra tienda de Jr. Arequipa</li><li>Boleta electrónica por WhatsApp el mismo día</li></ul>
+      </div>
+    </article>
+    <article class="blk">
+      <h3>Equipos originales</h3>
+      <div class="pair">
+        <img src="assets/promo-iphone-18-pro.jpg" width="1920" height="2880" alt="iPhone 18 Pro en tres colores" loading="lazy" style="object-position:50% 30%">
+        <ul><li>Caja sellada de fábrica</li><li>Te damos el IMEI para que lo verifiques antes de pagar</li><li>Accesorios originales y certificados, cada uno rotulado</li><li>Los importamos nosotros, sin intermediarios</li></ul>
+      </div>
+    </article>
+    <article class="blk">
+      <h3>Envío gratis a todo el Perú</h3>
+      <div class="pair">
+        <img src="assets/promo-llega.jpg" width="1920" height="1440" alt="Llega a tu casa: Lima, Callao y provincias" loading="lazy">
+        <ul><li>Lima, Callao y provincias; sin envíos internacionales</li><li>A tu domicilio o a la agencia que elijas</li><li>De 3 a 5 días</li><li>Te pasamos el seguimiento por WhatsApp</li></ul>
+      </div>
+    </article>
+    <article class="blk">
+      <h3>Servicio garantizado</h3>
+      <div class="pair">
+        <img src="assets/promo-natural-airpods.jpg" width="1920" height="1440" alt="iPhone en titanio natural con AirPods" loading="lazy" style="object-position:48% 60%">
+        <ul><li>Calidad revisada en cada equipo antes de entregarlo</li><li>Atención en tienda y por WhatsApp</li><li>Seguimiento de tu envío hasta que llegue</li><li>Boleta electrónica el mismo día</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="unbox" id="resenas" aria-labelledby="h-unbox">
+  <div class="head">
+    <h2 class="display" id="h-unbox">Reseñas de clientes</h2>
+    <p>Clientes de Piura abriendo su iPhone en nuestra tienda. Videos reales, sin guion.</p>
+  </div>
+  <div class="clips">
+    <div class="clip"><i class="ph ph-play-circle" aria-hidden="true"></i><strong>Video de cliente</strong><span class="spec">Vertical 9:16, máximo 30 s</span></div>
+    <div class="clip"><i class="ph ph-play-circle" aria-hidden="true"></i><strong>Video de cliente</strong><span class="spec">Vertical 9:16, máximo 30 s</span></div>
+    <div class="clip"><i class="ph ph-play-circle" aria-hidden="true"></i><strong>Video de cliente</strong><span class="spec">Vertical 9:16, máximo 30 s</span></div>
+  </div>
+</section>
+
+<section class="social" id="redes" aria-labelledby="h-soc">
+  <div class="head">
+    <h2 class="display" id="h-soc">@apple.spot1</h2>
+    <p>Equipos recién llegados, entregas y unboxing de clientes, todos los días.</p>
+    <div class="nets">
+      <a class="btn btn-ink" href="https://www.instagram.com/apple.spot1" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i>Instagram</a>
+      <a class="btn btn-ink" href="https://www.tiktok.com/@apple.spot1" target="_blank" rel="noopener"><i class="ph ph-tiktok-logo" aria-hidden="true"></i>TikTok</a>
+      <a class="btn btn-ink" href="https://www.facebook.com/share/1DL5jT6W9v/" target="_blank" rel="noopener"><i class="ph ph-facebook-logo" aria-hidden="true"></i>Facebook</a>
+    </div>
+  </div>
+  <ul class="feed">
+    <li><a href="https://www.instagram.com/apple.spot1" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i><span>Publicación de Instagram</span></a></li>
+    <li><a href="https://www.tiktok.com/@apple.spot1" target="_blank" rel="noopener"><i class="ph ph-tiktok-logo" aria-hidden="true"></i><span>Video de TikTok</span></a></li>
+    <li><a href="https://www.instagram.com/apple.spot1" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i><span>Publicación de Instagram</span></a></li>
+    <li><a href="https://www.tiktok.com/@apple.spot1" target="_blank" rel="noopener"><i class="ph ph-tiktok-logo" aria-hidden="true"></i><span>Video de TikTok</span></a></li>
+    <li><a href="https://www.instagram.com/apple.spot1" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i><span>Publicación de Instagram</span></a></li>
+    <li><a href="https://www.tiktok.com/@apple.spot1" target="_blank" rel="noopener"><i class="ph ph-tiktok-logo" aria-hidden="true"></i><span>Video de TikTok</span></a></li>
+  </ul>
+</section>
+
+<section class="ways" aria-labelledby="h-ways">
+  <h2 class="display" id="h-ways">Cómo compras</h2>
+  <ul class="names">
+    <li class="k">Pagas con</li><li>Tarjeta de crédito</li><li>Tarjeta de débito</li><li>Transferencia bancaria</li><li>Cuotas, muy pronto</li>
+    <li class="k">Recibes</li><li>Caja sellada</li><li>Boleta por WhatsApp</li><li>Garantía escrita</li><li>Seguimiento del envío</li>
+    <li class="k">Llegamos a</li><li>Piura y Castilla</li><li>Veintiséis de Octubre</li><li>Sullana y Paita</li><li>Lima y Callao</li><li>Todo el Perú</li>
+    <li class="k">Nos sigues en</li><li><a href="https://www.instagram.com/apple.spot1">Instagram</a></li><li><a href="https://www.tiktok.com/@apple.spot1">TikTok</a></li><li><a href="https://www.facebook.com/share/1DL5jT6W9v/">Facebook</a></li>
+  </ul>
+</section>
+
+<section class="faq" id="preguntas" aria-labelledby="h-faq">
+  <h2 class="display" id="h-faq">Preguntas</h2>
+  <div class="qa">
+    <p><b>¿Son equipos originales?</b> Sí, 100% originales e importados por nosotros. Los sellados llegan en su caja de fábrica y te damos el IMEI para que lo verifiques.</p>
+    <p><b>¿Qué garantía tienen?</b> Un año en equipos nuevos sellados y seis meses en seminuevos y de exhibición. La atendemos en nuestra tienda de Piura.</p>
+    <p><b>¿Venden iPhone en cuotas?</b> Muy pronto podrás pagar en cuotas desde esta web. Hoy aceptamos tarjeta de crédito, débito y transferencia.</p>
+    <p><b>¿El envío tiene costo?</b> No. Por la compra de cualquier iPhone el envío es gratis a Lima, Callao y todas las provincias.</p>
+    <p><b>¿Cuánto demora en llegar?</b> De 3 a 5 días. Si tu modelo es a pedido, de 6 a 7 días, y te lo decimos antes de que pagues.</p>
+    <p><b>¿Puedo recogerlo en una agencia?</b> Sí. Al comprar eliges si llega a tu domicilio o a la agencia que te quede más cerca.</p>
+    <p><b>¿Me dan comprobante?</b> Sí, te enviamos tu boleta por WhatsApp el mismo día de la compra.</p>
+    <p><b>¿Aceptan devoluciones?</b> No se realizan devoluciones. Si el equipo presenta una falla de fabricación, la garantía lo respalda.</p>
+    <p><b>¿Hacen envíos internacionales?</b> No. Solo realizamos envíos dentro del Perú.</p>
+    <p><b>¿Cómo funciona el regalo de lanzamiento?</b> Durante el primer mes, todo iPhone lleva un cubo de 20 W original. Del 17 Pro al 18 Pro Max, también unos AirPods.</p>
+    <p><b>¿Qué diferencia hay entre original y certificado?</b> Los accesorios originales son de Apple. Los certificados son de otras marcas que cumplen el estándar de Apple y cuestan menos.</p>
+    <p><a href="preguntas.html"><b>Ver todas las preguntas frecuentes</b></a></p>
+  </div>
+</section>
+
+<section class="contact" id="contacto" aria-labelledby="h-con">
+  <p class="say">Tienda en Jr. Arequipa 147, Piura, frente a la iglesia Cruz del Norte, junto al puente rojo.</p>
+  <div class="row2">
+    <figure class="map"><img src="assets/mapa-de-las-carreteras-de-la-republica.jpg" width="1150" height="1310" alt="Mapa antiguo del centro de Piura y el río" loading="lazy"></figure>
+    <div class="links">
+      <h2 id="h-con">Atención por WhatsApp</h2>
+      <a href="https://wa.me/51973785590">WhatsApp 973 785 590</a>
+      <a href="https://www.instagram.com/apple.spot1">Instagram @apple.spot1</a>
+      <p class="open-now" id="opentext">Abierto ahora</p>
+      <p class="hours">Lunes a viernes de 10:00 a. m. a 7:30 p. m. Domingos de 10:00 a. m. a 4:00 p. m.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <img src="assets/promo-natural-airpods.jpg" width="1920" height="1440" alt="iPhone en titanio natural con AirPods" loading="lazy">
+  <div class="top">
+    <ul>
+      <li><a href="politicas.html#terminos">Términos y condiciones</a></li>
+      <li><a href="politicas.html#devoluciones">Cambios y devoluciones</a></li>
+      <li><a href="politicas.html#envios">Política de envíos</a></li>
+      <li><a href="politicas.html#privacidad">Política de privacidad</a></li>
+      <li><a href="libro-reclamaciones.html">Libro de Reclamaciones</a></li>
+    </ul>
+    <ul>
+      <li><a href="coleccion.html">Colección</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <ul>
+      <li>Jr. Arequipa 147, Piura</li>
+      <li><a href="https://wa.me/51973785590">WhatsApp 973 785 590</a></li>
+      <li>Lun a vie 10:00 a 19:30 · Dom 10:00 a 16:00</li>
+    </ul>
+  </div>
+  <div class="bottom">
+    <p class="big display" aria-hidden="true">Apple sp<span class="sun" style="display:inline-block;width:.66em;height:.66em;border-radius:50%;background:var(--ocre)"></span>t</p>
+    <p class="legal">© 2026 Apple Spot · RUC 10777929726 · Apple Spot es una tienda independiente. iPhone y AirPods son marcas de Apple Inc. Imágenes de producto: anuncios ilustrados de Apple Spot. <a href="https://commons.wikimedia.org/wiki/File:Mapa_de_Piura_y_sus_Alrededores.jpg">Mapa de Piura</a>, General Drafting Co., dominio público, vía Wikimedia Commons.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/51973785590?text=Hola%2C%20vengo%20de%20la%20web" aria-label="Escríbenos por WhatsApp"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i></a>
+
+<div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+  <button class="close" type="button">Cerrar</button>
+  <nav aria-label="Menú móvil">
+    <a href="#categorias">Categorías</a><a href="#vitrina">iPhone</a><a href="#ofertas">Ofertas</a><a href="coleccion.html">Colección</a><a href="nosotros.html">Nosotros</a><a href="preguntas.html">Preguntas</a><a href="contacto.html">Contacto</a>
+  </nav>
+</div>
+
+<dialog class="sheet" id="pd" aria-labelledby="pd-name">
+  <div class="pd">
+    <div class="pd-gal">
+      <div class="pd-views" id="pd-views" role="group" aria-label="Vista del producto"><button type="button" data-view="foto" aria-pressed="true">Foto</button><button type="button" data-view="video" aria-pressed="false"><i class="ph ph-play" aria-hidden="true"></i>Video</button></div>
+      <div class="pd-video" id="pd-video" hidden><i class="ph ph-play-circle" aria-hidden="true"></i><b id="pd-video-t">Video del producto</b><span>Vertical 9:16, hasta 20 segundos. Generado con IA a partir de las fotos del equipo.</span></div>
+      <img id="pd-img" src="assets/iphone/iphone-pro-max-naranja.png" width="780" height="1630" alt="">
+      <p class="pd-scr" id="pd-scr"></p>
+    </div>
+    <div class="pd-info">
+      <div class="pd-top"><p class="pd-crumb" id="pd-crumb"></p><button class="x" type="button" data-close>Cerrar <i class="ph ph-x" aria-hidden="true"></i></button></div>
+      <p class="badge" id="pd-badge"></p>
+      <h2 class="display" id="pd-name">iPhone</h2>
+      <p class="pd-price" id="pd-price" aria-live="polite"></p>
+      <p class="pd-stock" id="pd-stock"></p>
+      <p class="pd-sku" id="pd-sku"></p>
+      <p class="pd-desc" id="pd-desc"></p>
+      <div class="pd-block" id="pd-models-w"><b id="pd-models-l">Modelo</b><div class="chips" id="pd-models" role="group" aria-labelledby="pd-models-l"></div></div>
+      <form class="pd-opts" id="pd-opts" onsubmit="return false"></form>
+      <div class="pd-block" id="pd-qty-w"><b>Cantidad</b><div class="qty"><button type="button" data-q="-1" aria-label="Quitar uno">−</button><output id="pd-qty">1</output><button type="button" data-q="1" aria-label="Agregar uno">+</button></div></div>
+      <div class="pd-cta">
+        <button class="btn btn-ocre" type="button" id="pd-add"><i class="ph ph-handbag" aria-hidden="true"></i>Agregar a la bolsa</button>
+        <button class="btn btn-ink" type="button" id="pd-buy">Comprar ahora</button>
+      </div>
+      <a class="btn btn-soft wa-btn" id="pd-wa" href="https://wa.me/51973785590" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i>Consultar por WhatsApp</a>
+      <p class="pd-added" id="pd-added" role="status"></p>
+      <div class="pd-box" id="pd-box"></div>
+      <div class="pd-pack" id="pd-pack"></div>
+      <dl class="facts" id="pd-facts"></dl>
+      <details class="more"><summary>Cuidados y modo de uso</summary><ul id="pd-care"></ul></details>
+      <section class="pd-rev" aria-labelledby="pd-rev-h">
+        <h3 id="pd-rev-h">Reseñas</h3>
+        <p class="stars" aria-hidden="true"><i class="ph ph-star"></i><i class="ph ph-star"></i><i class="ph ph-star"></i><i class="ph ph-star"></i><i class="ph ph-star"></i></p>
+        <p id="pd-rev-t">Aún no hay reseñas de este modelo. Solo publicamos reseñas de compras verificadas.</p>
+        <a href="#resenas" data-go="#resenas">Ver videos de clientes abriendo su iPhone</a>
+      </section>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="sheet narrow" id="bag" aria-labelledby="bag-h">
+  <div class="bagw">
+    <div class="pd-top"><h2 class="display" id="bag-h">Tu bolsa</h2><button class="x" type="button" data-close>Cerrar <i class="ph ph-x" aria-hidden="true"></i></button></div>
+
+    <div id="bag-view" style="display:contents">
+      <ul class="items" id="bag-items"></ul>
+      <div class="empty" id="bag-empty" hidden>
+        <p>Tu bolsa está vacía. Elige un iPhone y aquí verás el precio final, con el envío y los descuentos.</p>
+        <a class="btn btn-ink" href="#vitrina" data-close>Ver los iPhone</a>
+      </div>
+      <div class="sum" id="bag-sum">
+        <div><span>Subtotal</span><span id="s-sub">S/ 0</span></div>
+        <div id="s-disc-r"><span>10% en accesorios</span><span id="s-disc">−S/ 0</span></div>
+        <div id="s-unlock" hidden><span>¿Primera compra de accesorios?</span><a href="#descuento" data-go="#descuento">Activa tu 10%</a></div>
+        <div><span>Envío</span><span id="s-ship">Gratis</span></div>
+        <div class="tot"><span>Total</span><span id="s-tot">S/ 0</span></div>
+        <button class="btn btn-ocre" type="button" id="go-pay">Ir a pagar <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+        <button class="btn btn-soft" type="button" data-close>Seguir comprando</button>
+      </div>
+    </div>
+
+    <form class="ck" id="ck" novalidate hidden>
+      <ol class="steps"><li class="on">1. Tus datos</li><li>2. Entrega</li><li>3. Pago</li></ol>
+      <fieldset data-step="1">
+        <legend>¿A nombre de quién va?</legend>
+        <p class="guest" id="k-guest">Compras como invitado, sin crear cuenta. <button type="button" data-acct>¿Tienes cuenta? Inicia sesión</button></p>
+        <div class="fld"><label for="k-name">Nombre y apellido</label><input id="k-name" name="name" autocomplete="name"><p class="err" id="e-name"></p></div>
+        <div class="fld"><label for="k-dni">DNI</label><input id="k-dni" name="dni" inputmode="numeric" maxlength="8" autocomplete="off"><p class="hint">Va en tu boleta.</p><p class="err" id="e-dni"></p></div>
+        <div class="fld"><label for="k-tel">Celular con WhatsApp</label><input id="k-tel" name="tel" inputmode="numeric" maxlength="9" autocomplete="tel-national"><p class="hint">Aquí te llegan la boleta y el seguimiento.</p><p class="err" id="e-tel"></p></div>
+        <div class="fld"><label for="k-mail">Correo (opcional)</label><input id="k-mail" name="mail" type="email" autocomplete="email"><p class="err" id="e-mail"></p></div>
+      </fieldset>
+      <fieldset data-step="2" hidden>
+        <legend>¿Cómo lo recibes?</legend>
+        <div class="seg">
+          <label><input type="radio" name="kmode" value="casa" checked><span>A domicilio</span></label>
+          <label><input type="radio" name="kmode" value="agencia"><span>En agencia</span></label>
+          <label><input type="radio" name="kmode" value="tienda"><span>Recojo en tienda</span></label>
+        </div>
+        <div class="fld" id="w-city"><label for="k-city">Ciudad</label><select id="k-city" name="city"><option>Piura</option><option>Castilla</option><option>Veintiséis de Octubre</option><option>Sullana</option><option>Paita</option><option>Talara</option><option>Lima</option><option>Callao</option><option>Chiclayo</option><option>Trujillo</option><option>Arequipa</option><option>Otra ciudad del Perú</option></select></div>
+        <div class="fld" id="w-addr"><label for="k-addr">Dirección y referencia</label><input id="k-addr" name="addr" autocomplete="street-address"><p class="err" id="e-addr"></p></div>
+        <div class="fld" id="w-agency" hidden><label for="k-agency">Agencia</label><select id="k-agency" name="agency"><option value="">Elige una agencia</option><option>Shalom</option><option>Olva Courier</option><option>Marvisur</option></select><p class="err" id="e-agency"></p></div>
+        <p class="fld hint" id="k-when"></p>
+      </fieldset>
+      <fieldset data-step="3" hidden>
+        <legend>¿Cómo pagas?</legend>
+        <div class="payopt">
+          <label><input type="radio" name="pay" value="Tarjeta" checked><span><b>Tarjeta de crédito o débito</b><small>Visa, Mastercard, American Express y Diners, con Culqi.</small></span></label>
+          <label><input type="radio" name="pay" value="Transferencia"><span><b>Transferencia bancaria</b><small>Te enviamos los datos de la cuenta por WhatsApp.</small></span></label>
+        </div>
+        <label class="terms"><input type="checkbox" id="k-terms"><span>Acepto los <a href="politicas.html#terminos" target="_blank" rel="noopener">términos y condiciones</a>, la <a href="politicas.html#devoluciones" target="_blank" rel="noopener">política de cambios y devoluciones</a> y la <a href="politicas.html#envios" target="_blank" rel="noopener">política de envíos</a>.</span></label>
+        <p class="err" id="e-terms"></p>
+      </fieldset>
+      <div class="sum">
+        <div class="tot"><span>Total</span><span id="k-tot">S/ 0</span></div>
+      </div>
+      <div class="ck-nav"><button class="btn btn-soft" type="button" id="ck-back">Atrás</button><button class="btn btn-ocre" type="submit" id="ck-next">Continuar</button></div>
+    </form>
+
+    <div class="done" id="done" hidden></div>
+  </div>
+</dialog>
+
+<dialog class="sheet narrow" id="acct" aria-labelledby="acct-h">
+  <div class="acctw">
+    <div class="pd-top"><h2 class="display" id="acct-h">Tu cuenta</h2><button class="x" type="button" data-close>Cerrar <i class="ph ph-x" aria-hidden="true"></i></button></div>
+    <p>Puedes comprar sin cuenta. Si creas una, tienes:</p>
+    <ul><li>Tus pedidos y su seguimiento</li><li>Tus direcciones guardadas</li><li>Tu garantía y boletas en un solo lugar</li></ul>
+    <form class="ck" id="acct-f" novalidate>
+      <div class="fld" id="a-mail-w"><label for="a-mail">Correo</label><input id="a-mail" type="email" autocomplete="email"><p class="hint">Te enviamos un código para entrar, sin contraseña.</p><p class="err" id="e-a-mail"></p></div>
+      <div class="fld" id="a-code-w" hidden><label for="a-code">Código de 6 números</label><input id="a-code" inputmode="numeric" maxlength="6" autocomplete="one-time-code"><p class="hint" id="a-sent"></p><p class="err" id="e-a-code"></p></div>
+      <button class="btn btn-ocre" type="submit" id="a-go">Enviar código</button>
+    </form>
+    <div id="a-in" hidden><p class="guest" id="a-who"></p><button class="btn btn-soft" type="button" id="a-out">Cerrar sesión</button></div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.classList.remove('no-js');
+  var figma=/figma|static/.test(location.search+location.hash);
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!figma) root.classList.add('js-motion');
+
+  /* Entradas escalonadas por sección */
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if(!figma && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var sib=[].slice.call(e.target.parentNode.querySelectorAll(':scope > .rv'));
+        var i=Math.max(0,sib.indexOf(e.target));
+        e.target.style.transitionDelay=Math.min(i*80,400)+'ms';
+        e.target.classList.add('in'); io.unobserve(e.target);
+      });
+    },{rootMargin:'0px 0px -8% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+
+  /* Visor: la foto cambia con cada sección */
+  var shots=document.querySelectorAll('.visor-frame img');
+  var zooms=document.querySelectorAll('.zoom span');
+  var capt=document.getElementById('capt');
+  function setShot(s){
+    var n=+s.dataset.shot;
+    shots.forEach(function(im){im.classList.toggle('on',+im.dataset.shot===n)});
+    zooms.forEach(function(z){z.classList.toggle('on',z.dataset.z===s.dataset.zoom)});
+    capt.textContent=s.dataset.cap;
+  }
+  if(figma){
+    /* Para Figma: sin sticky, cada foto queda al lado de su sección */
+    root.classList.add('figma');
+    var lay=function(){
+      if(innerWidth<=820) return;
+      var secs=[].slice.call(document.querySelectorAll('.col > section[data-shot]')), col=document.querySelector('.col');
+      secs.forEach(function(s,i){
+        var im=document.querySelector('.visor-frame img[data-shot="'+s.dataset.shot+'"]');
+        var top=Math.max(0,s.offsetTop-20), end=(secs[i+1]?secs[i+1].offsetTop-32:col.offsetHeight-40);
+        im.classList.add('on');
+        im.style.top=top+'px';
+        im.style.height=(end-top)+'px';
+        im.style.bottom='auto';
+      });
+    };
+    lay(); addEventListener('load',lay);
+  } else if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting) setShot(e.target)});
+    },{rootMargin:'-45% 0px -45% 0px'});
+    document.querySelectorAll('.col > section[data-shot]').forEach(function(s){so.observe(s)});
+  }
+
+  /* Hora de Piura y tienda abierta */
+  function piuraNow(){
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Lima',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var o={};p.forEach(function(x){o[x.type]=x.value});
+    return {d:o.weekday,m:(+o.hour%24)*60+(+o.minute)};
+  }
+  function status(){
+    var n=piuraNow(), open=false, until='';
+    if(['Mon','Tue','Wed','Thu','Fri'].indexOf(n.d)>-1 && n.m>=600 && n.m<1170){open=true;until='7:30 p. m.'}
+    if(n.d==='Sun' && n.m>=600 && n.m<960){open=true;until='4:00 p. m.'}
+    var t=new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',hour:'numeric',minute:'2-digit'}).format(new Date());
+    document.getElementById('clock').textContent='Piura · '+t;
+    var chip=document.getElementById('openchip');
+    chip.classList.toggle('closed',!open);
+    chip.lastChild.textContent=open?'Tienda abierta':'Tienda cerrada';
+    document.getElementById('opentext').textContent=open?'Abierto ahora, hasta las '+until:'Ahora cerrado. Escríbenos y te respondemos al abrir.';
+  }
+  status(); setInterval(status,30000);
+
+  /* Vitrina: pestañas de modelos */
+  var models=[
+    {n:'iPhone 18 Pro Max',p:6499,s:'pro-max',in:'6,9 pulgadas',d:'La pantalla más grande y la batería de mayor duración de la línea. Sellado de fábrica, con boleta y un año de garantía.'},
+    {n:'iPhone 18 Pro',p:5799,s:'pro',in:'6,3 pulgadas',d:'El mismo sistema de cámaras del Pro Max en formato de 6,3 pulgadas. Sellado, con un año de garantía.'},
+    {n:'iPhone 17 Pro Max',p:5299,s:'pro-max',in:'6,9 pulgadas',d:'Generación anterior con pantalla de 6,9 pulgadas, a menor precio y con el regalo de lanzamiento completo.'},
+    {n:'iPhone 17 Pro',p:4699,s:'pro',in:'6,3 pulgadas',d:'El acceso a la línea Pro, con AirPods incluidos durante el lanzamiento.'}
+  ];
+  var colors={naranja:'Naranja',azul:'Azul profundo',plata:'Plata'};
+  var caps={'0':'256 GB','700':'512 GB','1500':'1 TB'};
+  var tabs=document.querySelectorAll('[role=tab]'), cur=0, img=document.getElementById('m-img');
+  function soles(n){return 'S/ '+n.toLocaleString('en-US')}
+  function render(){
+    var m=models[cur], cfg=document.getElementById('cfg');
+    var col=cfg.querySelector('[name=col]:checked').value, cap=cfg.querySelector('[name=cap]:checked').value;
+    var src='assets/iphone/iphone-'+m.s+'-'+col+'.png';
+    document.getElementById('m-name').textContent=m.n;
+    document.getElementById('m-photo').textContent=m.in;
+    document.getElementById('m-price').textContent=soles(m.p+(+cap));
+    document.getElementById('m-desc').textContent=m.d;
+    document.getElementById('c-name').textContent=colors[col];
+    if(img.getAttribute('src')!==src){
+      img.classList.add('swap');
+      setTimeout(function(){img.src=src;img.className=m.s==='pro'?'pro':'';img.alt=m.n+' en '+colors[col].toLowerCase()},figma?0:200);
+    }
+    document.getElementById('m-more').href='#p-'+ids[cur];
+  }
+  function pick(i){
+    cur=i;
+    tabs.forEach(function(t,k){t.setAttribute('aria-selected',k===i);t.tabIndex=k===i?0:-1});
+    render();
+  }
+  document.getElementById('cfg').addEventListener('change',render);
+  var ids=['18pm','18p','17pm','17p'];
+  function showSel(){
+    var cfg=document.getElementById('cfg');
+    return {color:cfg.querySelector('[name=col]:checked').value,cap:caps[cfg.querySelector('[name=cap]:checked').value]};
+  }
+
+  /* iPhone de portada: tocar para girar, se inclina con el cursor */
+  var hp=document.querySelector('.hero-phone');
+  hp.addEventListener('click',function(){
+    var on=hp.getAttribute('aria-pressed')!=='true';
+    hp.setAttribute('aria-pressed',on);
+    hp.setAttribute('aria-label',on?'Girar el iPhone para ver las cámaras':'Girar el iPhone 18 Pro Max para ver la pantalla');
+    document.getElementById('flip-t').textContent=on?'Ver las cámaras':'Gíralo';
+  });
+  if(!reduce && !figma && matchMedia('(hover:hover)').matches){
+    var hero=document.querySelector('.hero');
+    hero.addEventListener('pointermove',function(e){
+      var r=hero.getBoundingClientRect();
+      hp.style.setProperty('--tilt',(((e.clientX-r.left)/r.width-.5)*24).toFixed(1)+'deg');
+    });
+    hero.addEventListener('pointerleave',function(){hp.style.setProperty('--tilt','0deg')});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(i)});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(d){var j=(i+d+tabs.length)%tabs.length;pick(j);tabs[j].focus()}
+    });
+  });
+
+  /* Ticket de envío */
+  var fmt=new Intl.DateTimeFormat('es-PE',{weekday:'short',day:'numeric',month:'short'});
+  function addDays(n){var d=new Date();d.setDate(d.getDate()+n);return fmt.format(d).replace(/\./g,'')}
+  function ticket(){
+    var c=document.getElementById('city').value;
+    var m=document.querySelector('input[name=mode]:checked').value;
+    var mid=document.getElementById('it-mid');
+    if(m==='tienda'){
+      mid.hidden=true;
+      document.getElementById('t-arr').textContent='Lo recoges en Jr. Arequipa 147';
+      document.getElementById('w-arr').textContent='Coordinamos';
+      document.getElementById('tot-a').textContent='Recojo en tienda, S/ 0';
+      document.getElementById('tot-b').textContent='Te avisamos por WhatsApp';
+      return;
+    }
+    mid.hidden=false;
+    document.getElementById('w-ship').textContent=addDays(1);
+    var city=c==='Otra ciudad del Perú'?'tu ciudad':c;
+    document.getElementById('t-arr').textContent=m==='casa'?'Llega a tu casa en '+city:'Lo recoges en la agencia de '+city;
+    document.getElementById('w-arr').textContent=addDays(3)+' a '+addDays(5);
+    document.getElementById('tot-a').textContent='Envío S/ 0';
+    document.getElementById('tot-b').textContent='Llega entre '+addDays(3)+' y '+addDays(5);
+  }
+  document.getElementById('slip').addEventListener('change',ticket); ticket();
+
+  /* Borde dentado del ticket */
+  var pts=['0 0','100% 0'],teeth=24;
+  for(var k=teeth;k>=0;k--){pts.push((k/teeth*100)+'% '+(k%2?'100%':'calc(100% - 12px)'))}
+  document.getElementById('slip').style.clipPath='polygon('+pts.join(',')+')';
+
+  /* Frase: cada palabra se enciende al cruzar la línea */
+  var tag=document.getElementById('tag');
+  tag.innerHTML=tag.textContent.split(' ').map(function(w){return '<span class="w">'+w+'</span>'}).join(' ');
+  var words=[].slice.call(tag.querySelectorAll('.w'));
+  if(figma||reduce) words.forEach(function(w){w.classList.add('lit')});
+
+  /* Nombre que pesa: escala ligada al scroll */
+  var wm=document.querySelector('.wordmark'), big=document.querySelector('.foot .big'), ticking=false;
+  function onScroll(){
+    var vh=innerHeight;
+    if(!reduce && !figma){
+      var y=Math.min(scrollY/vh,1);
+      wm.style.transform='scale('+(1-y*.06)+')';
+      var r=big.getBoundingClientRect();
+      var f=Math.min(Math.max((vh-r.top)/vh,0),1);
+      big.style.transform='scale('+(.94+f*.06)+')';
+      var line=vh*.62;
+      words.forEach(function(w){w.classList.toggle('lit',w.getBoundingClientRect().top<line)});
+    }
+    ticking=false;
+  }
+  addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+  onScroll();
+
+  /* Menú móvil */
+  var panel=document.getElementById('panel'), mb=document.querySelector('.menu-btn');
+  function menu(open){
+    if(open){panel.hidden=false;void panel.offsetWidth}
+    else setTimeout(function(){if(!panel.classList.contains('open'))panel.hidden=true},400);
+    panel.classList.toggle('open',open); mb.setAttribute('aria-expanded',open);
+    panel.querySelectorAll('nav a').forEach(function(a,i){a.style.transitionDelay=open?Math.min(i*60,400)+'ms':'0ms'});
+    if(open) panel.querySelector('.close').focus(); else mb.focus();
+  }
+  mb.addEventListener('click',function(){menu(true)});
+  panel.querySelector('.close').addEventListener('click',function(){menu(false)});
+  panel.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){menu(false)})});
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&panel.classList.contains('open'))menu(false)});
+
+  /* ===== Tienda: ficha de producto, bolsa y pago ===== */
+  var COL={naranja:['Naranja','#D8742E'],azul:['Azul profundo','#33405E'],plata:['Plata','#D2D4D7'],grafito:['Grafito','#3B3B3E'],natural:['Titanio natural','#BDB4A5'],blanco:['Blanco','#ECEAE4'],negro:['Negro','#2B2B2E'],celeste:['Celeste','#AFC6DC']};
+  function oCol(l){return {k:'color',l:'Color',t:'color',v:l.map(function(c){return {v:c}})}}
+  function oCap(l,d){return {k:'cap',l:'Capacidad',t:'seg',v:l.map(function(c,i){return {v:c,d:d[i]}})}}
+  var NEW=['naranja','azul','plata'], BASE=['negro','blanco','celeste'], TI=['grafito','natural','blanco'];
+  var PRO=['256 GB','512 GB','1 TB'], PROD=[0,700,1500];
+  var P={
+    '18pm':{n:'iPhone 18 Pro Max',g:'18',p:6499,look:'pro-max',sz:1,scr:'6,9',st:'s',pods:1,d:'La pantalla más grande y la batería de mayor duración de la línea.',o:[oCol(NEW),oCap(PRO,PROD)]},
+    '18p':{n:'iPhone 18 Pro',g:'18',p:5799,look:'pro',sz:.92,scr:'6,3',st:'s',pods:1,d:'El sistema de cámaras del Pro Max en formato de 6,3 pulgadas.',o:[oCol(NEW),oCap(PRO,PROD)]},
+    '17pm':{n:'iPhone 17 Pro Max',g:'17',p:5299,look:'pro-max',sz:1,scr:'6,9',st:'s',pods:1,d:'La pantalla grande por S/ 1,200 menos que el 18 Pro Max, con el regalo completo.',o:[oCol(NEW),oCap(PRO,PROD)]},
+    '17p':{n:'iPhone 17 Pro',g:'17',p:4699,look:'pro',sz:.92,scr:'6,3',st:'s',pods:1,d:'El acceso a la línea Pro, con AirPods incluidos durante el lanzamiento.',o:[oCol(NEW),oCap(PRO,PROD)]},
+    'air':{n:'iPhone Air',g:'17',p:4299,look:'air',sz:.96,scr:'6,5',st:'s',d:'El iPhone de perfil más delgado, con pantalla de 6,5 pulgadas.',o:[oCol(BASE),oCap(PRO,PROD)]},
+    '17':{n:'iPhone 17',g:'17',p:3799,look:'doble',sz:.92,scr:'6,3',st:'s',d:'Dos cámaras y pantalla de 6,3 pulgadas, sellado y con un año de garantía.',o:[oCol(BASE),oCap(['256 GB','512 GB'],[0,700])]},
+    '16pm':{n:'iPhone 16 Pro Max',g:'u',p:3899,look:'cuadrado',sz:1,scr:'6,9',st:'u',d:'Revisado en tienda, con la batería verificada antes de venderlo.',o:[oCol(TI),oCap(['256 GB','512 GB'],[0,400])]},
+    '16p':{n:'iPhone 16 Pro',g:'u',p:3399,look:'cuadrado',sz:.92,scr:'6,3',st:'u',d:'Tres cámaras en tamaño compacto, revisado y con seis meses de garantía.',o:[oCol(TI),oCap(['256 GB','512 GB'],[0,400])]},
+    '16':{n:'iPhone 16',g:'u',p:2599,look:'doble',sz:.9,scr:'6,1',st:'u',d:'Revisado en tienda, con seis meses de garantía.',o:[oCol(BASE),oCap(['128 GB','256 GB'],[0,300])]},
+    '15pm':{n:'iPhone 15 Pro Max',g:'u',p:2999,look:'cuadrado',sz:.97,scr:'6,7',st:'u',d:'Pantalla de 6,7 pulgadas y tres cámaras, revisado en tienda.',o:[oCol(TI),oCap(['256 GB','512 GB'],[0,400])]},
+    '15':{n:'iPhone 15',g:'u',p:1999,look:'doble',sz:.9,scr:'6,1',st:'u',d:'Con USB C, revisado y con seis meses de garantía.',o:[oCol(BASE),oCap(['128 GB','256 GB'],[0,300])]},
+    '14pm':{n:'iPhone 14 Pro Max',g:'u',p:2399,look:'cuadrado',sz:.97,scr:'6,7',st:'u',d:'Revisado en tienda, con seis meses de garantía.',o:[oCol(TI),oCap(['128 GB','256 GB'],[0,300])]},
+    '13':{n:'iPhone 13',g:'u',p:1499,look:'doble',sz:.9,scr:'6,1',st:'u',d:'Revisado en tienda, con seis meses de garantía.',o:[oCol(BASE),oCap(['128 GB','256 GB'],[0,300])]},
+    '12':{n:'iPhone 12',g:'u',p:1099,look:'doble',sz:.9,scr:'6,1',st:'u',d:'La opción de menor precio del catálogo, revisada y con seis meses de garantía.',o:[oCol(BASE),oCap(['64 GB','128 GB'],[0,200])]},
+    'cubo':{n:'Cubo de carga 20 W',g:'a',p:99,img:'cubo-20w',d:'Carga rápida por USB C para cualquier iPhone del 12 en adelante.',o:[{k:'tipo',l:'Tipo',t:'seg',v:[{v:'Original Apple',d:0},{v:'Certificado',d:-50}]}]},
+    'cable':{n:'Cable USB C',g:'a',p:79,img:'cable-usb-c',d:'Un metro, para cargar y pasar tus fotos a la computadora.',o:[{k:'tipo',l:'Tipo',t:'seg',v:[{v:'Original Apple',d:0},{v:'Certificado',d:-44}]}]},
+    'case':{n:'Case con MagSafe',g:'a',p:59,img:'case',d:'Protege la cámara y deja pasar la carga inalámbrica.',o:[{k:'para',l:'Para tu iPhone',t:'select',v:[]}]}
+  };
+  /* Precio anterior (se muestra tachado) */
+  P['17pm'].was=5699; P['17p'].was=4999; P['16pm'].was=4199;
+  /* Packs o combos */
+  P['pack-prot']={n:'Pack protección',g:'a',p:79,was:94,img:'case',pack:1,d:'Case con MagSafe y cable USB C certificado, elegidos para tu modelo.',o:[{k:'para',l:'Para tu iPhone',t:'select',v:[]}]};
+  P['pack-carga']={n:'Pack carga rápida',g:'a',p:159,was:178,img:'cubo-20w',pack:1,d:'Cubo de 20 W y cable USB C, ambos originales Apple.',o:[]};
+  var ORDER=['18pm','18p','17pm','17p','air','17','16pm','16p','16','15pm','15','14pm','13','12','cubo','cable','case','pack-prot','pack-carga'];
+  P['case'].o[0].v=ORDER.filter(function(k){return P[k].look}).map(function(k){return {v:P[k].n}});
+  P['pack-prot'].o[0].v=P['case'].o[0].v;
+
+  /* Stock por variante (ejemplo; en Shopify sale del inventario).
+     0 = a pedido, 6 a 7 días. Sin dato = en stock. Los seminuevos son unidades únicas. */
+  var STOCK={'18pm|plata|1 TB':0,'18pm|azul|256 GB':2,'18p|naranja|1 TB':0,'18p|plata|256 GB':3,'17pm|azul|512 GB':1,'17p|plata|1 TB':0,'air|celeste|1 TB':0,'17|celeste|512 GB':0,'16p|blanco|512 GB':0,'12|celeste|128 GB':0};
+  function stockOf(id,sel){
+    var k=id+'|'+(sel.color||'')+'|'+(sel.cap||'');
+    if(k in STOCK) return STOCK[k];
+    return P[id].st==='u'?1:null;
+  }
+  function wasOf(id,sel){return P[id].was?P[id].was+priceOf(id,sel)-P[id].p:0}
+  function skuOf(id,sel){
+    var c=['AS',id.toUpperCase().replace('-','')];
+    if(sel.color) c.push(sel.color.slice(0,3).toUpperCase());
+    if(sel.cap) c.push(sel.cap.replace(' GB','').replace(' TB','TB'));
+    if(sel.tipo) c.push(sel.tipo.indexOf('Original')===0?'ORI':'CER');
+    return c.join('-');
+  }
+  var onOrder=function(i){return stockOf(i.id,i.sel)===0};
+  var GROUP={'18':'Línea 18','17':'Línea 17','u':'Seminuevos, del 12 al 16','a':'Accesorios'};
+  var isPhone=function(id){return !!P[id].look};
+
+  function priceOf(id,sel){
+    var t=P[id].p;
+    P[id].o.forEach(function(o){o.v.forEach(function(v){if(v.d && sel[o.k]===v.v) t+=v.d})});
+    return t;
+  }
+  function imgOf(id,sel){return 'assets/iphone/'+(P[id].img||('iphone-'+P[id].look+'-'+sel.color))+'.png'}
+  function selLine(id,sel){
+    return P[id].o.map(function(o){return o.k==='color'?COL[sel.color][0]:sel[o.k]}).join(' · ');
+  }
+  function defaults(id,pre){
+    var sel={};
+    P[id].o.forEach(function(o){sel[o.k]=o.v[0].v});
+    if(pre) for(var k in pre) if(k in sel && P[id].o.some(function(o){return o.k===k && o.v.some(function(v){return v.v===pre[k]})})) sel[k]=pre[k];
+    return sel;
+  }
+
+  var pd=document.getElementById('pd'), bagD=document.getElementById('bag');
+  var cur={id:'18pm',sel:{},q:1};
+  function lockScroll(){root.classList.toggle('lock',pd.open||bagD.open||document.getElementById('acct').open)}
+
+  function renderPD(){
+    var p=P[cur.id], s=cur.sel, phone=isPhone(cur.id);
+    var im=document.getElementById('pd-img'), src=imgOf(cur.id,s);
+    pd.style.setProperty('--sz',p.sz||1);
+    if(im.getAttribute('src')!==src){
+      im.classList.add('swap');
+      setTimeout(function(){im.src=src;im.classList.toggle('acc',!phone);im.classList.remove('swap')},reduce?0:180);
+    } else im.classList.toggle('acc',!phone);
+    im.alt=p.n+(s.color?' en '+COL[s.color][0].toLowerCase():'');
+    document.getElementById('pd-scr').textContent=phone?'Pantalla de '+p.scr+' pulgadas':'';
+    document.getElementById('pd-crumb').textContent=GROUP[p.g];
+    var b=document.getElementById('pd-badge');
+    b.className='badge '+(p.st||'a');
+    b.textContent=p.st==='s'?'Sellado de fábrica · 1 año de garantía':p.st==='u'?'Seminuevo revisado · 6 meses de garantía':'Originales y certificados, cada uno rotulado';
+    document.getElementById('pd-name').textContent=p.n;
+    var now=priceOf(cur.id,s), was=wasOf(cur.id,s);
+    document.getElementById('pd-price').innerHTML=soles(now*cur.q)+(was?'<s>'+soles(was*cur.q)+'</s><span class="pct">−'+Math.round((1-now/was)*100)+'%</span>':'');
+    var sq=stockOf(cur.id,s), sk=document.getElementById('pd-stock');
+    sk.className='pd-stock'+(sq===0?' order':sq!==null&&sq<=3?' low':'');
+    sk.textContent=sq===0?'A pedido: se entrega en 6 a 7 días':sq===1?(p.st==='u'?'Unidad única, lista para enviar':'Última unidad'):sq!==null?'Quedan '+sq+' unidades':'En stock, listo para enviar';
+    document.getElementById('pd-sku').textContent='SKU '+skuOf(cur.id,s)+(phone?' · El IMEI te lo damos antes de pagar':'');
+    document.getElementById('pd-desc').textContent=p.d;
+
+    /* Video del producto: solo iPhone */
+    document.getElementById('pd-views').hidden=!phone;
+    if(!phone) setView('foto');
+    document.getElementById('pd-video-t').textContent='Video del '+p.n;
+
+    /* Modelos hermanos */
+    var mw=document.getElementById('pd-models');
+    mw.innerHTML=ORDER.filter(function(k){return P[k].g===p.g}).map(function(k){
+      return '<button type="button" data-model="'+k+'" aria-pressed="'+(k===cur.id)+'">'+P[k].n.replace('iPhone ','')+'</button>';
+    }).join('');
+
+    /* Opciones */
+    document.getElementById('pd-opts').innerHTML=p.o.map(function(o){
+      if(o.t==='color') return '<fieldset class="pick dots"><legend>Color: <span>'+COL[s.color][0]+'</span></legend>'+o.v.map(function(v){
+        return '<label title="'+COL[v.v][0]+'"><input type="radio" name="o-color" value="'+v.v+'"'+(s.color===v.v?' checked':'')+' aria-label="'+COL[v.v][0]+'"><i style="background:'+COL[v.v][1]+'"></i></label>'}).join('')+'</fieldset>';
+      if(o.t==='seg') return '<fieldset class="pick seg"><legend>'+o.l+'</legend>'+o.v.map(function(v){
+        var dl=v.d>0?'<small>+'+soles(v.d)+'</small>':v.d<0?'<small>'+soles(p.p+v.d)+'</small>':(o.k==='tipo'?'<small>'+soles(p.p)+'</small>':'');
+        var alt={}; for(var k in s) alt[k]=s[k]; alt[o.k]=v.v;
+        if(o.k==='cap' && stockOf(cur.id,alt)===0) dl+='<em>a pedido</em>';
+        return '<label><input type="radio" name="o-'+o.k+'" value="'+v.v+'"'+(s[o.k]===v.v?' checked':'')+'><span>'+v.v+dl+'</span></label>'}).join('')+'</fieldset>';
+      return '<div class="fld pick"><label for="o-'+o.k+'">'+o.l+'</label><select class="sel" id="o-'+o.k+'" name="o-'+o.k+'">'+o.v.map(function(v){
+        return '<option'+(s[o.k]===v.v?' selected':'')+'>'+v.v+'</option>'}).join('')+'</select></div>';
+    }).join('');
+
+    document.getElementById('pd-qty-w').hidden=phone;
+    document.getElementById('pd-qty').textContent=cur.q;
+
+    /* Lo que va en la caja */
+    var box=document.getElementById('pd-box');
+    box.hidden=!phone;
+    if(phone) box.innerHTML='<span class="things"><img src="assets/iphone/cubo-20w.png" width="600" height="760" alt="Cubo de 20 W">'+(p.pods?'<img src="assets/iphone/airpods.png" width="760" height="640" alt="AirPods">':'')+'</span><p><b>De regalo en tu caja</b>Un cubo de 20 W original'+(p.pods?' y unos AirPods':'')+', solo durante el primer mes.</p>';
+
+    /* Pack sugerido */
+    var pk=document.getElementById('pd-pack');
+    pk.hidden=!phone;
+    if(phone) pk.innerHTML='<img src="assets/iphone/case.png" width="780" height="1630" alt=""><span><b>Pack protección para tu '+p.n+'</b><small>Case con MagSafe y cable certificado · <s>S/ 94</s> S/ 79</small></span><button type="button" data-addpack>Agregar pack</button>';
+
+    /* Cuidados y modo de uso */
+    var care=phone?['Carga con cubos de 20 W o más, originales o certificados.','No lo dejes al sol del mediodía ni dentro del auto: sobre 35 °C la batería se desgasta más rápido.','Ponle case y protector de pantalla desde el primer día.','Activa la copia en iCloud antes de pasar tus datos desde otro equipo.']:['Usa el cubo con cables USB C en buen estado.','Desconéctalo del tomacorriente cuando no lo uses.','Limpia el case con un paño húmedo, sin alcohol.'];
+    if(p.st==='u') care.push('Revisa la condición de la batería en Ajustes, Batería: te la mostramos antes de pagar.');
+    document.getElementById('pd-care').innerHTML=care.map(function(c){return '<li>'+c+'</li>'}).join('');
+
+    var facts=phone?[
+      ['Entrega',sq===0?'Producto a pedido: se entrega en 6 a 7 días. Envío gratis a todo el Perú.':'Gratis a todo el Perú. Si pides hoy, llega entre el '+addDays(3)+' y el '+addDays(5)+'.'],
+      ['Recojo','Gratis en Jr. Arequipa 147, Piura, frente a la iglesia Cruz del Norte.'],
+      ['Garantía',p.st==='s'?'1 año, la atendemos en nuestra tienda.':'6 meses, la atendemos en nuestra tienda.'],
+      ['Antes de pagar','Te damos el IMEI para que lo verifiques.'],
+      ['Pago','Tarjeta de crédito, débito o transferencia. Cuotas, muy pronto.'],
+      ['Boleta','Llega a tu WhatsApp el mismo día.'],
+      ['Ficha','Pantalla de '+p.scr+' pulgadas · '+selLine(cur.id,s)]
+    ]:[
+      ['Entrega','Gratis si lo llevas con un iPhone. Solo accesorios: S/ 10 a todo el Perú.'],
+      ['Descuento',p.pack?'Precio de pack, ya rebajado.':'10% en tu primera compra de accesorios al dejar tu correo o WhatsApp.'],
+      ['Recojo','Gratis en Jr. Arequipa 147, Piura.'],
+      ['Pago','Tarjeta de crédito, débito o transferencia.']
+    ];
+    document.getElementById('pd-facts').innerHTML=facts.map(function(f){return '<div><dt>'+f[0]+'</dt><dd>'+f[1]+'</dd></div>'}).join('');
+    document.getElementById('pd-wa').href='https://wa.me/51973785590?text='+encodeURIComponent('Hola, tengo una duda sobre el '+p.n+' ('+selLine(cur.id,s)+')');
+  }
+
+  function openP(id,pre,push){
+    if(!P[id]) return;
+    cur={id:id,sel:defaults(id,pre),q:1};
+    document.getElementById('pd-added').textContent='';
+    renderPD();
+    if(bagD.open) bagD.close();
+    if(!pd.open){pd.showModal();pd.scrollTop=0}
+    if(push!==false && location.hash!=='#p-'+id) history.pushState({p:id},'','#p-'+id);
+    else if(push===false) history.replaceState({p:id,r:1},'','#p-'+id);
+    lockScroll();
+  }
+  function closeP(){
+    if(/^#p-/.test(location.hash) && history.state && history.state.p && !history.state.r) history.back();
+    else {pd.close();if(/^#p-/.test(location.hash))history.replaceState(null,'',location.pathname+location.search);lockScroll()}
+  }
+  addEventListener('popstate',function(){
+    var m=location.hash.match(/^#p-(.+)$/);
+    if(m && P[m[1]]) openP(m[1],null,null);
+    else if(pd.open){pd.close();lockScroll()}
+  });
+
+  pd.addEventListener('change',function(e){
+    var n=e.target.name||'';
+    if(n.indexOf('o-')===0){cur.sel[n.slice(2)]=e.target.value;renderPD()}
+  });
+  pd.addEventListener('click',function(e){
+    if(e.target===pd){closeP();return}
+    var m=e.target.closest('[data-model]');
+    if(m){
+      var keep=cur.sel; cur={id:m.dataset.model,sel:defaults(m.dataset.model,keep),q:1};
+      history.replaceState({p:cur.id,r:history.state&&history.state.r},'','#p-'+cur.id); renderPD(); return;
+    }
+    var q=e.target.closest('[data-q]');
+    if(q){cur.q=Math.min(9,Math.max(1,cur.q+(+q.dataset.q)));renderPD();return}
+    var vw=e.target.closest('[data-view]');
+    if(vw){setView(vw.dataset.view);return}
+    if(e.target.closest('[data-addpack]')){
+      addToBag('pack-prot',{para:P[cur.id].n},1);
+      document.getElementById('pd-added').innerHTML='Pack protección agregado. <button type="button" id="pd-see">Ver bolsa y pagar</button>';
+      document.getElementById('pd-see').addEventListener('click',function(){openBag(false)});
+      return;
+    }
+    if(e.target.closest('[data-close]')) closeP();
+  });
+  pd.addEventListener('cancel',function(e){e.preventDefault();closeP()});
+
+  /* Bolsa */
+  var bag=[];
+  try{bag=JSON.parse(localStorage.getItem('as-bag')||'[]').filter(function(i){return P[i.id]})}catch(e){bag=[]}
+  var EST=new URLSearchParams(location.search).get('estado');
+  function saveBag(){if(EST)return;try{localStorage.setItem('as-bag',JSON.stringify(bag))}catch(e){}}
+  function addToBag(id,sel,q){
+    var key=id+'|'+JSON.stringify(sel), hit=bag.filter(function(i){return i.key===key})[0];
+    if(hit) hit.q=Math.min(9,hit.q+q); else bag.push({key:key,id:id,sel:sel,q:q});
+    saveBag(); renderBag();
+  }
+  /* El 10% de accesorios se activa al dejar correo o WhatsApp */
+  var unlocked=false;
+  try{unlocked=!!localStorage.getItem('as-10')}catch(e){}
+  function totals(mode){
+    var sub=0,acc=0,phone=false;
+    bag.forEach(function(i){var t=priceOf(i.id,i.sel)*i.q;sub+=t;if(isPhone(i.id))phone=true;else if(!P[i.id].pack)acc+=t});
+    var disc=unlocked?Math.round(acc*.1):0, ship=(phone||mode==='tienda'||!bag.length)?0:10;
+    return {sub:sub,acc:acc,disc:disc,ship:ship,tot:sub-disc+ship,n:bag.reduce(function(a,i){return a+i.q},0)};
+  }
+  function renderBag(){
+    var t=totals(), n=document.getElementById('bag-n');
+    n.textContent=t.n; if(t.n) n.removeAttribute('data-zero'); else n.setAttribute('data-zero','');
+    document.getElementById('bag-open').setAttribute('aria-label','Abrir tu bolsa, '+t.n+(t.n===1?' producto':' productos'));
+    document.getElementById('bag-items').innerHTML=bag.map(function(i,k){
+      return '<li class="item"><div class="th"><img src="'+imgOf(i.id,i.sel)+'" alt=""></div><div><b>'+P[i.id].n+'</b><span class="o">'+[selLine(i.id,i.sel),onOrder(i)?'A pedido, 6 a 7 días':''].filter(Boolean).join(' · ')+'</span>'+
+        '<div class="row3"><div class="qty"><button type="button" data-bq="'+k+':-1" aria-label="Quitar uno">−</button><output>'+i.q+'</output><button type="button" data-bq="'+k+':1" aria-label="Agregar uno">+</button></div><button class="rm" type="button" data-rm="'+k+'">Quitar</button></div></div>'+
+        '<span class="pr">'+soles(priceOf(i.id,i.sel)*i.q)+'</span></li>';
+    }).join('');
+    document.getElementById('bag-empty').hidden=!!bag.length;
+    document.getElementById('bag-sum').hidden=!bag.length;
+    document.getElementById('s-sub').textContent=soles(t.sub);
+    document.getElementById('s-disc-r').hidden=!t.disc;
+    document.getElementById('s-unlock').hidden=unlocked||!t.acc;
+    document.getElementById('s-disc').textContent='−'+soles(t.disc);
+    document.getElementById('s-ship').textContent=t.ship?soles(t.ship):'Gratis';
+    document.getElementById('s-tot').textContent=soles(t.tot);
+  }
+  function openBag(checkout){
+    if(pd.open){pd.close();if(/^#p-/.test(location.hash))history.replaceState(null,'',location.pathname+location.search)}
+    showView(checkout && bag.length?'ck':'bag');
+    if(!bagD.open) bagD.showModal();
+    lockScroll();
+  }
+  function showView(v){
+    document.getElementById('bag-view').hidden=v!=='bag';
+    document.getElementById('bag-view').style.display=v==='bag'?'contents':'none';
+    document.getElementById('ck').hidden=v!=='ck';
+    document.getElementById('done').hidden=v!=='done';
+    document.getElementById('bag-h').textContent=v==='bag'?'Tu bolsa':v==='ck'?'Pagar':'Pedido listo';
+    if(v==='ck') step(1);
+    bagD.scrollTop=0;
+  }
+  function closeBag(){bagD.close();lockScroll()}
+  bagD.addEventListener('cancel',function(e){e.preventDefault();closeBag()});
+  bagD.addEventListener('click',function(e){
+    if(e.target===bagD){closeBag();return}
+    var bq=e.target.closest('[data-bq]');
+    if(bq){var a=bq.dataset.bq.split(':'),it=bag[+a[0]];it.q=Math.min(9,Math.max(1,it.q+(+a[1])));saveBag();renderBag();return}
+    var rm=e.target.closest('[data-rm]');
+    if(rm){bag.splice(+rm.dataset.rm,1);saveBag();renderBag();return}
+    if(e.target.closest('[data-close]')) closeBag();
+  });
+  document.getElementById('bag-open').addEventListener('click',function(){openBag(false)});
+  document.getElementById('go-pay').addEventListener('click',function(){showView('ck')});
+
+  document.getElementById('pd-add').addEventListener('click',function(){
+    addToBag(cur.id,JSON.parse(JSON.stringify(cur.sel)),cur.q);
+    document.getElementById('pd-added').innerHTML='Listo, está en tu bolsa. <button type="button" id="pd-see">Ver bolsa y pagar</button>';
+    document.getElementById('pd-see').addEventListener('click',function(){openBag(false)});
+  });
+  document.getElementById('pd-buy').addEventListener('click',function(){
+    addToBag(cur.id,JSON.parse(JSON.stringify(cur.sel)),cur.q);
+    openBag(true);
+  });
+  document.getElementById('m-add').addEventListener('click',function(e){
+    e.preventDefault(); addToBag(ids[cur0()],showSel(),1); openBag(false);
+  });
+  document.getElementById('m-more').addEventListener('click',function(e){
+    e.preventDefault(); openP(ids[cur0()],showSel());
+  });
+  function cur0(){var k=0;tabs.forEach(function(t,i){if(t.getAttribute('aria-selected')==='true')k=i});return k}
+
+  /* Cualquier enlace con data-open abre su ficha */
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-open]');
+    if(!a || pd.contains(a)) return;
+    e.preventDefault();
+    var pre=null;
+    if(a.dataset.opt){pre={};a.dataset.opt.split(';').forEach(function(x){var kv=x.split(':');pre[kv[0]]=kv[1]})}
+    openP(a.dataset.open,pre);
+  });
+
+  /* Pago en tres pasos */
+  var ck=document.getElementById('ck'), stepN=1;
+  function step(n){
+    stepN=n;
+    ck.querySelectorAll('[data-step]').forEach(function(f){f.hidden=+f.dataset.step!==n});
+    ck.querySelectorAll('.steps li').forEach(function(l,i){l.classList.toggle('on',i<n)});
+    document.getElementById('ck-back').textContent=n===1?'Volver a la bolsa':'Atrás';
+    var mode=(ck.querySelector('[name=kmode]:checked')||{}).value;
+    document.getElementById('ck-next').textContent=n<3?'Continuar':'Pagar '+soles(totals(mode).tot);
+    document.getElementById('k-tot').textContent=soles(totals(mode).tot);
+    deliv();
+  }
+  function deliv(){
+    var mode=ck.querySelector('[name=kmode]:checked').value;
+    document.getElementById('w-city').hidden=mode==='tienda';
+    document.getElementById('w-addr').hidden=mode!=='casa';
+    document.getElementById('w-agency').hidden=mode!=='agencia';
+    var late=bag.some(onOrder);
+    document.getElementById('k-when').textContent=mode==='tienda'?'Lo recoges en Jr. Arequipa 147, Piura. Te avisamos por WhatsApp cuando esté listo.':late?'Tu pedido incluye un producto a pedido: llega en 6 a 7 días.':'Llega entre el '+addDays(3)+' y el '+addDays(5)+'.';
+    var t=totals(mode);
+    document.getElementById('k-tot').textContent=soles(t.tot);
+    if(stepN===3) document.getElementById('ck-next').textContent='Pagar '+soles(t.tot);
+  }
+  ck.addEventListener('change',function(e){if(e.target.name==='kmode')deliv()});
+  function bad(id,msg){
+    var el=document.getElementById('k-'+id), er=document.getElementById('e-'+id);
+    if(el) el.setAttribute('aria-invalid',msg?'true':'false');
+    if(er) er.textContent=msg||'';
+    return !!msg;
+  }
+  function v(id){return document.getElementById('k-'+id).value.trim()}
+  function check(n){
+    var errs=[];
+    if(n===1){
+      if(bad('name',v('name').length<5||!/\s/.test(v('name'))?'Escribe tu nombre y apellido.':'')) errs.push('name');
+      if(bad('dni',/^\d{8}$/.test(v('dni'))?'':'El DNI tiene 8 números.')) errs.push('dni');
+      if(bad('tel',/^9\d{8}$/.test(v('tel'))?'':'Escribe un celular de 9 números que empiece con 9.')) errs.push('tel');
+      if(bad('mail',!v('mail')||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('mail'))?'':'Revisa el correo; parece incompleto.')) errs.push('mail');
+    }
+    if(n===2){
+      var mode=ck.querySelector('[name=kmode]:checked').value;
+      if(bad('addr',mode==='casa'&&v('addr').length<6?'Escribe la dirección y una referencia.':'')) errs.push('addr');
+      if(bad('agency',mode==='agencia'&&!v('agency')?'Elige la agencia donde lo recoges.':'')) errs.push('agency');
+    }
+    if(n===3){
+      var ok=document.getElementById('k-terms').checked;
+      document.getElementById('e-terms').textContent=ok?'':'Acepta los términos para continuar.';
+      if(!ok) errs.push('terms');
+    }
+    if(errs.length) document.getElementById('k-'+errs[0]).focus();
+    return !errs.length;
+  }
+  document.getElementById('ck-back').addEventListener('click',function(){if(stepN===1)showView('bag');else step(stepN-1)});
+  ck.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!check(stepN)) return;
+    if(stepN<3){step(stepN+1);bagD.scrollTop=0;return}
+    finish();
+  });
+
+  function finish(){
+    /* Aquí se conecta Culqi Checkout con la llave pública del cliente.
+       Mientras no haya pasarela, el pedido completo se envía a la tienda por WhatsApp. */
+    var mode=ck.querySelector('[name=kmode]:checked').value, t=totals(mode);
+    var pay=ck.querySelector('[name=pay]:checked').value;
+    var code='AS-'+String(Date.now()).slice(-5);
+    var where=mode==='tienda'?'Recojo en tienda':mode==='agencia'?'Agencia '+v('agency')+', '+v('city'):v('addr')+', '+v('city');
+    var lines=bag.map(function(i){return i.q+' × '+P[i.id].n+' ('+selLine(i.id,i.sel)+') SKU '+skuOf(i.id,i.sel)+(onOrder(i)?' A PEDIDO':'')+' '+soles(priceOf(i.id,i.sel)*i.q)});
+    var msg='Pedido '+code+'\n'+lines.join('\n')+'\nTotal: '+soles(t.tot)+'\nPago: '+pay+'\nEntrega: '+where+'\nNombre: '+v('name')+'\nDNI: '+v('dni')+'\nCelular: '+v('tel');
+    var done=document.getElementById('done');
+    done.innerHTML='<p>Tu pedido</p><p class="code">'+code+'</p><ul>'+bag.map(function(i){return '<li><span>'+i.q+' × '+P[i.id].n+'<br><span class="o">'+selLine(i.id,i.sel)+'</span></span><span>'+soles(priceOf(i.id,i.sel)*i.q)+'</span></li>'}).join('')+
+      (t.disc?'<li><span>10% en accesorios</span><span>−'+soles(t.disc)+'</span></li>':'')+'<li><span>Envío</span><span>'+(t.ship?soles(t.ship):'Gratis')+'</span></li><li><b>Total</b><b>'+soles(t.tot)+'</b></li></ul>'+
+      '<p class="note">Entrega: '+where+'. Pago: '+pay.toLowerCase()+'. Envía el pedido y te confirmamos en minutos, con tu boleta, al '+v('tel').replace(/(\d{3})(\d{3})(\d{3})/,'$1 $2 $3')+'.</p>'+
+      '<a class="btn btn-ocre" id="send" href="https://wa.me/51973785590?text='+encodeURIComponent(msg)+'" target="_blank" rel="noopener">Enviar pedido a la tienda</a>'+
+      '<button class="btn btn-soft" type="button" data-close>Volver a la tienda</button>';
+    showView('done');
+    document.getElementById('send').addEventListener('click',function(){bag=[];saveBag();renderBag()});
+  }
+
+  function setView(v){
+    document.querySelectorAll('#pd-views button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.view===v)});
+    document.getElementById('pd-video').hidden=v!=='video';
+    document.getElementById('pd-img').hidden=v==='video';
+  }
+
+  /* Enlaces que cierran el panel y llevan a una sección */
+  document.addEventListener('click',function(e){
+    var g=e.target.closest('[data-go]');
+    if(!g) return;
+    e.preventDefault();
+    [pd,bagD,acct].forEach(function(d){if(d.open)d.close()});
+    if(/^#p-/.test(location.hash)) history.replaceState(null,'',location.pathname+location.search);
+    lockScroll();
+    var t=document.querySelector(g.dataset.go);
+    if(t) t.scrollIntoView({behavior:reduce?'auto':'smooth'});
+    if(g.dataset.go==='#descuento') setTimeout(function(){document.getElementById('u-contact').focus({preventScroll:true})},500);
+  });
+
+  /* 10% a cambio de correo o WhatsApp */
+  var uf=document.getElementById('descuento');
+  function showCode(){
+    document.getElementById('u-ok').hidden=false;
+    document.getElementById('u-ok').innerHTML='Listo. Tu código es <b>BIENVENIDA10</b> y ya está aplicado en tu bolsa.';
+  }
+  if(unlocked) showCode();
+  uf.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=document.getElementById('u-contact').value.trim().replace(/\s/g,'');
+    var ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)||/^9\d{8}$/.test(v);
+    document.getElementById('u-contact').setAttribute('aria-invalid',!ok);
+    document.getElementById('e-u').textContent=ok?'':'Escribe un correo válido o un celular de 9 números que empiece con 9.';
+    if(!ok){document.getElementById('u-contact').focus();return}
+    unlocked=true;
+    try{localStorage.setItem('as-10',v)}catch(err){}
+    showCode(); renderBag();
+  });
+
+  /* Cuenta: entrar con código, o comprar como invitado */
+  var acct=document.getElementById('acct'), af=document.getElementById('acct-f'), who=null;
+  try{who=localStorage.getItem('as-user')}catch(e){}
+  function renderAcct(){
+    af.hidden=!!who;
+    document.getElementById('a-in').hidden=!who;
+    document.getElementById('a-who').textContent=who?'Sesión iniciada como '+who+'.':'';
+    var g=document.getElementById('k-guest');
+    g.innerHTML=who?'Compras con tu cuenta: '+who+'.':'Compras como invitado, sin crear cuenta. <button type="button" data-acct>¿Tienes cuenta? Inicia sesión</button>';
+    if(who && !document.getElementById('k-mail').value) document.getElementById('k-mail').value=who;
+  }
+  function openAcct(){
+    renderAcct();
+    if(!acct.open) acct.showModal();
+    lockScroll();
+  }
+  document.getElementById('acct-open').addEventListener('click',openAcct);
+  document.addEventListener('click',function(e){if(e.target.closest('[data-acct]'))openAcct()});
+  acct.addEventListener('click',function(e){
+    if(e.target===acct||e.target.closest('[data-close]')){acct.close();lockScroll()}
+  });
+  acct.addEventListener('cancel',function(e){e.preventDefault();acct.close();lockScroll()});
+  af.addEventListener('submit',function(e){
+    e.preventDefault();
+    var codeStep=!document.getElementById('a-code-w').hidden;
+    if(!codeStep){
+      var m=document.getElementById('a-mail').value.trim(), ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m);
+      document.getElementById('a-mail').setAttribute('aria-invalid',!ok);
+      document.getElementById('e-a-mail').textContent=ok?'':'Revisa el correo; parece incompleto.';
+      if(!ok) return;
+      document.getElementById('a-code-w').hidden=false;
+      document.getElementById('a-sent').textContent='Lo enviamos a '+m+'. Revisa también la carpeta de spam.';
+      document.getElementById('a-go').textContent='Entrar';
+      document.getElementById('a-code').focus();
+      return;
+    }
+    var c=document.getElementById('a-code').value.trim(), okc=/^\d{6}$/.test(c);
+    document.getElementById('a-code').setAttribute('aria-invalid',!okc);
+    document.getElementById('e-a-code').textContent=okc?'':'El código tiene 6 números.';
+    if(!okc) return;
+    who=document.getElementById('a-mail').value.trim();
+    try{localStorage.setItem('as-user',who)}catch(err){}
+    renderAcct();
+  });
+  document.getElementById('a-out').addEventListener('click',function(){
+    who=null;
+    try{localStorage.removeItem('as-user')}catch(err){}
+    document.getElementById('a-code-w').hidden=true;
+    document.getElementById('a-go').textContent='Enviar código';
+    document.getElementById('a-code').value='';
+    renderAcct();
+  });
+  renderAcct();
+
+  renderBag();
+  var hm=location.hash.match(/^#p-(.+)$/);
+  if(hm && P[hm[1]]) openP(hm[1],null,false);
+  if(location.hash==='#bolsa') openBag(false);
+
+  /* Pantallas sueltas para Figma: index.html?figma&estado=ficha|bolsa|bolsa-vacia|pago-1|pago-2|pago-3|listo|cuenta
+     Cada una se muestra sola, a página completa y con datos de ejemplo. */
+  if(EST){
+    root.classList.add('estado');
+    var sample=[
+      {id:'18p',sel:{color:'naranja',cap:'256 GB'},q:1},
+      {id:'17p',sel:{color:'plata',cap:'512 GB'},q:1},
+      {id:'case',sel:{para:'iPhone 18 Pro'},q:1},
+      {id:'cable',sel:{tipo:'Original Apple'},q:2}
+    ];
+    var flat=function(d){d.close();d.show()};
+    var fill=function(){
+      document.getElementById('k-name').value='Rosa Chunga Ramírez';
+      document.getElementById('k-dni').value='45871236';
+      document.getElementById('k-tel').value='973111222';
+      document.getElementById('k-mail').value='rosa.chunga@correo.pe';
+      document.getElementById('k-addr').value='Av. Grau 455, frente al parque Cortez, Piura';
+      document.getElementById('k-terms').checked=true;
+    };
+    if(EST==='ficha'){
+      var pid=new URLSearchParams(location.search).get('p')||'18pm';
+      openP(P[pid]?pid:'18pm',null,false); flat(pd);
+    } else if(EST==='cuenta'){
+      openAcct(); flat(acct);
+    } else {
+      unlocked=EST!=='bolsa-vacia';
+      bag=EST==='bolsa-vacia'?[]:sample.map(function(i){i.key=i.id+'|'+JSON.stringify(i.sel);return i});
+      renderBag();
+      if(EST==='bolsa'||EST==='bolsa-vacia') openBag(false);
+      else {
+        openBag(true);
+        if(EST!=='pago-1') fill();
+        if(EST==='pago-2') step(2);
+        if(EST==='pago-3') step(3);
+        if(EST==='listo'){step(3);finish()}
+      }
+      flat(bagD);
+    }
+    lockScroll(); root.classList.remove('lock');
+    if(document.activeElement) document.activeElement.blur();
+  }
+})();
+</script>
+</body>
+</html>

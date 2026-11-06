@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Libro de Reclamaciones · Apple Spot</title>
+<meta name="description" content="Libro de Reclamaciones virtual de Apple Spot, conforme a la Ley N.° 29571.">
+<meta property="og:title" content="Libro de Reclamaciones · Apple Spot">
+<meta property="og:description" content="Libro de Reclamaciones virtual de Apple Spot, conforme a la Ley N.° 29571.">
+<meta property="og:locale" content="es_PE">
+<meta name="theme-color" content="#161513">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161513'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23E2A12B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<link rel="stylesheet" href="paginas.css">
+<style>
+.prov{grid-column:1 / span 4}
+.prov dl{margin-top:16px;display:grid;gap:12px}
+.prov dt{font-size:var(--t-small);font-weight:700;color:var(--muted)}
+.prov h2{font-size:1.5rem}
+.prov .note{background:var(--surface)}
+.book{grid-column:6 / span 7}
+.book fieldset{border:0;margin-top:48px}
+.book fieldset:first-child{margin-top:0}
+.book legend{font-size:1.5rem;font-weight:700;line-height:1.2;margin-bottom:8px}
+.book .def{font-size:1rem;color:var(--muted);margin-top:8px}
+.book .btn{margin-top:32px;width:100%;min-height:56px}
+@media (max-width:820px){.book{margin-top:48px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<p class="announce">10% en tu primera compra de accesorios · Envío gratis a todo el Perú por la compra de tu iPhone</p>
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Apple Spot, inicio">Apple sp<span class="sun" aria-hidden="true"></span>t</a>
+  <nav aria-label="Principal"><a href="index.html">Inicio</a><a href="coleccion.html">Colección</a><a href="index.html#ofertas">Ofertas</a><a href="nosotros.html">Nosotros</a><a href="preguntas.html">Preguntas</a><a href="contacto.html">Contacto</a></nav>
+  <a class="btn btn-ocre" href="coleccion.html">Ver iPhone</a>
+</header>
+<main id="main">
+<section class="head" aria-labelledby="h1">
+  <p class="crumbs"><a href="index.html">Inicio</a> / Libro de Reclamaciones</p>
+  <h1 class="display rv" id="h1">Libro de Reclamaciones</h1>
+  <p class="rv">Conforme al Código de Protección y Defensa del Consumidor, Ley N.° 29571.</p>
+</section>
+<section class="sec" aria-label="Hoja de reclamación">
+  <aside class="prov">
+    <h2>Proveedor</h2>
+    <dl><div><dt>Nombre comercial</dt><dd>Apple Spot</dd></div><div><dt>RUC</dt><dd>10777929726</dd></div><div><dt>Domicilio</dt><dd>Jr. Arequipa 147, Piura</dd></div></dl>
+    <p class="note">La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.</p>
+  </aside>
+  <form class="book" id="book" novalidate>
+    <fieldset>
+      <legend>1. Identificación del consumidor</legend>
+      <div class="fld"><label for="r-name">Nombre y apellidos</label><input id="r-name" autocomplete="name"><p class="err" id="e-r-name"></p></div>
+      <div class="two">
+        <div class="fld"><label for="r-doctype">Tipo de documento</label><select id="r-doctype"><option>DNI</option><option>Carné de extranjería</option><option>Pasaporte</option></select></div>
+        <div class="fld"><label for="r-doc">Número de documento</label><input id="r-doc" inputmode="numeric" autocomplete="off"><p class="err" id="e-r-doc"></p></div>
+      </div>
+      <div class="fld"><label for="r-addr">Domicilio</label><input id="r-addr" autocomplete="street-address"><p class="err" id="e-r-addr"></p></div>
+      <div class="two">
+        <div class="fld"><label for="r-tel">Celular</label><input id="r-tel" inputmode="numeric" maxlength="9" autocomplete="tel-national"><p class="err" id="e-r-tel"></p></div>
+        <div class="fld"><label for="r-mail">Correo</label><input id="r-mail" type="email" autocomplete="email"><p class="err" id="e-r-mail"></p></div>
+      </div>
+      <label class="check"><input type="checkbox" id="r-minor"><span>Soy menor de edad</span></label>
+      <div class="fld" id="w-parent" hidden><label for="r-parent">Nombre del padre, madre o apoderado</label><input id="r-parent"><p class="err" id="e-r-parent"></p></div>
+    </fieldset>
+    <fieldset>
+      <legend>2. Identificación del bien contratado</legend>
+      <div class="seg" role="radiogroup" aria-label="Tipo de bien"><label><input type="radio" name="r-good" value="Producto" checked><span>Producto</span></label><label><input type="radio" name="r-good" value="Servicio"><span>Servicio</span></label></div>
+      <div class="two">
+        <div class="fld"><label for="r-desc">Descripción</label><input id="r-desc" placeholder="Por ejemplo: iPhone 17 Pro, 256 GB"><p class="err" id="e-r-desc"></p></div>
+        <div class="fld"><label for="r-amount">Monto reclamado (S/)</label><input id="r-amount" inputmode="decimal"></div>
+      </div>
+      <div class="fld"><label for="r-order">N.° de pedido o boleta (opcional)</label><input id="r-order"></div>
+    </fieldset>
+    <fieldset>
+      <legend>3. Detalle de la reclamación</legend>
+      <div class="seg" role="radiogroup" aria-label="Tipo"><label><input type="radio" name="r-type" value="Reclamo" checked><span>Reclamo</span></label><label><input type="radio" name="r-type" value="Queja"><span>Queja</span></label></div>
+      <p class="def"><b>Reclamo:</b> disconformidad relacionada con los productos o servicios. <b>Queja:</b> disconformidad no relacionada con los productos o servicios, o malestar respecto a la atención al público.</p>
+      <div class="fld"><label for="r-detail">Detalle</label><textarea id="r-detail"></textarea><p class="err" id="e-r-detail"></p></div>
+      <div class="fld"><label for="r-ask">Pedido del consumidor</label><textarea id="r-ask"></textarea><p class="err" id="e-r-ask"></p></div>
+    </fieldset>
+    <label class="check"><input type="checkbox" id="r-ok"><span>Declaro que los datos consignados son verdaderos y acepto la <a href="politicas.html#privacidad">política de privacidad</a>.</span></label>
+    <p class="err" id="e-r-ok" style="color:#9C1F17;font-size:var(--t-small);font-weight:600;margin-top:4px"></p>
+    <button class="btn btn-ocre" type="submit">Registrar hoja de reclamación</button>
+    <p class="done" id="r-done" role="status" hidden></p>
+  </form>
+</section>
+</main>
+<footer class="foot">
+  <div class="cols">
+    <div>
+      <h2>Apple Spot</h2>
+      <p>Jr. Arequipa 147, Piura, frente a la iglesia Cruz del Norte, junto al puente rojo.</p>
+      <p>Lunes a viernes de 10:00 a. m. a 7:30 p. m. Domingos de 10:00 a. m. a 4:00 p. m.</p>
+      <p><a href="https://wa.me/51973785590">WhatsApp 973 785 590</a></p>
+    </div>
+    <div><h2>Tienda</h2><ul><li><a href="coleccion.html">Colección</a></li><li><a href="coleccion.html#nuevos">Nuevos y sellados</a></li><li><a href="coleccion.html#seminuevos">Seminuevos</a></li><li><a href="coleccion.html#accesorios">Accesorios</a></li><li><a href="index.html#ofertas">Ofertas</a></li></ul></div>
+    <div><h2>Ayuda</h2><ul><li><a href="preguntas.html">Preguntas frecuentes</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="https://www.instagram.com/apple.spot1">Instagram</a></li><li><a href="https://www.tiktok.com/@apple.spot1">TikTok</a></li><li><a href="https://www.facebook.com/share/1DL5jT6W9v/">Facebook</a></li></ul></div>
+    <div><h2>Legal</h2><ul><li><a href="politicas.html#terminos">Términos y condiciones</a></li><li><a href="politicas.html#devoluciones">Cambios y devoluciones</a></li><li><a href="politicas.html#envios">Política de envíos</a></li><li><a href="politicas.html#privacidad">Política de privacidad</a></li></ul>
+      <a class="libro" href="libro-reclamaciones.html"><i class="ph ph-book-open-text" aria-hidden="true"></i>Libro de Reclamaciones</a></div>
+  </div>
+  <p class="big display" aria-hidden="true">Apple sp<span class="sun"></span>t</p>
+  <p class="legal">© 2026 Apple Spot · RUC 10777929726 · Jr. Arequipa 147, Piura. Apple Spot es una tienda independiente. iPhone y AirPods son marcas de Apple Inc.</p>
+</footer>
+<a class="wa" href="https://wa.me/51973785590?text=Hola%2C%20vengo%20de%20la%20web" aria-label="Escríbenos por WhatsApp"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i></a>
+<script>
+(function(){
+  if(/figma|static/.test(location.search)) document.documentElement.classList.add('figma');
+  /* El botón de WhatsApp se retira al llegar al pie, donde ya están los datos de contacto */
+  var wa=document.querySelector('.wa'), ft=document.querySelector('.foot');
+  if(wa && ft && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){wa.classList.toggle('away',es[0].isIntersecting)}).observe(ft);
+  }
+
+  /* Entrada suave al hacer scroll (no en modo Figma ni con movimiento reducido) */
+  if(!document.documentElement.classList.contains('figma') && !matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
+    document.documentElement.classList.add('js-rv');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=Math.min((i%4)*80,240)+'ms';io.observe(el)});
+  }
+
+
+  var f=document.getElementById('book'), minor=document.getElementById('r-minor');
+  minor.addEventListener('change',function(){document.getElementById('w-parent').hidden=!minor.checked});
+  function v(id){return document.getElementById(id).value.trim()}
+  function bad(id,msg){var i=document.getElementById(id),e=document.getElementById('e-'+id);if(i.type!=='checkbox')i.setAttribute('aria-invalid',msg?'true':'false');e.textContent=msg||'';return !!msg}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var errs=[], doc=document.getElementById('r-doctype').value;
+    if(bad('r-name',v('r-name').split(' ').length<2?'Escribe tu nombre y apellidos.':'')) errs.push('r-name');
+    if(bad('r-doc',doc==='DNI'&&!/^\d{8}$/.test(v('r-doc'))?'El DNI tiene 8 números.':v('r-doc').length<6?'Escribe el número de documento.':'')) errs.push('r-doc');
+    if(bad('r-addr',v('r-addr').length<6?'Escribe tu domicilio.':'')) errs.push('r-addr');
+    if(bad('r-tel',/^9\d{8}$/.test(v('r-tel'))?'':'Escribe un celular de 9 números que empiece con 9.')) errs.push('r-tel');
+    if(bad('r-mail',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('r-mail'))?'':'Escribe un correo válido; ahí recibirás la copia.')) errs.push('r-mail');
+    if(minor.checked && bad('r-parent',v('r-parent').length<5?'Escribe el nombre del padre, madre o apoderado.':'')) errs.push('r-parent');
+    if(bad('r-desc',v('r-desc').length<3?'Indica el producto o servicio.':'')) errs.push('r-desc');
+    if(bad('r-detail',v('r-detail').length<20?'Describe lo ocurrido en al menos 20 caracteres.':'')) errs.push('r-detail');
+    if(bad('r-ask',v('r-ask').length<5?'Indica qué solicitas.':'')) errs.push('r-ask');
+    if(bad('r-ok',document.getElementById('r-ok').checked?'':'Confirma la declaración para continuar.')) errs.push('r-ok');
+    if(errs.length){document.getElementById(errs[0]).focus();return}
+    var now=new Date(), num=String(now.getTime()).slice(-6);
+    var date=new Intl.DateTimeFormat('es-PE',{dateStyle:'long',timeStyle:'short',timeZone:'America/Lima'}).format(now);
+    var type=document.querySelector('[name=r-type]:checked').value;
+    var d=document.getElementById('r-done');
+    d.hidden=false;
+    d.innerHTML='Hoja de reclamación <b>N.° '+now.getFullYear()+'-'+num+'</b> registrada el '+date+' como <b>'+type.toLowerCase()+'</b>. Enviamos una copia a '+v('r-mail')+'. Apple Spot responderá en un plazo máximo de 15 días hábiles.';
+    f.querySelector('button[type=submit]').hidden=true;
+    d.scrollIntoView({block:'center'});
+  });
+
+})();
+</script>
+</body>
+</html>
